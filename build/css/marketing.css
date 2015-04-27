@@ -38,6 +38,14 @@
   width: 75%;
   padding: 0 15px 30px 15px; }
 
+.clearfix:after {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
 /* box-model all the things! */
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -102,7 +110,7 @@ body {
 h1, h2, h3 {
   padding: 0;
   margin: 0 0 20px 0; }
-  h1.underline span, h2.underline span, h3.underline span {
+  h1.underline span, h1.underline #blog-banner .blog-banner-content span a, #blog-banner .blog-banner-content span h1.underline a, h2.underline span, h2.underline #blog-banner .blog-banner-content span a, #blog-banner .blog-banner-content span h2.underline a, h3.underline span, h3.underline #blog-banner .blog-banner-content span a, #blog-banner .blog-banner-content span h3.underline a {
     border-bottom: 4px solid rgba(59, 68, 71, 0.1); }
 
 h1 {
@@ -176,12 +184,13 @@ a {
   color: #4d423a; }
 
 .button {
-  background: #f5795b;
-  color: #872717;
+  background: #00B5E3;
+  color: #fff;
   font-family: "canada-type-gibson",sans-serif;
   font-style: normal;
-  font-weight: 600;
-  cursor: pointer; }
+  font-weight: 400;
+  cursor: pointer;
+  border: 0; }
   .button.green {
     background: #6FBF3C;
     color: #fff;
@@ -223,7 +232,7 @@ a {
     font-family: "canada-type-gibson",sans-serif;
     font-style: normal;
     font-weight: 300; }
-  .plan-price-point span {
+  .plan-price-point span, .plan-price-point #blog-banner .blog-banner-content span a, #blog-banner .blog-banner-content span .plan-price-point a {
     font-family: "canada-type-gibson",sans-serif;
     font-style: normal;
     font-weight: 100;
@@ -321,6 +330,13 @@ a {
         font-weight: 400;
         font-size: 16px;
         text-decoration: none; }
+  #header #logins a {
+    color: #00B5E3;
+    font-family: "canada-type-gibson",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none; }
 
 /* alt-header */
 #header-light {
@@ -340,25 +356,29 @@ a {
   #header-light img {
     height: 26px;
     width: auto; }
-  #header-light .button {
-    margin-left: 20px;
-    border: 2px solid #6FBF3C;
-    background: #fff;
-    color: #6FBF3C; }
-  #header-light a.grey {
-    color: #585858;
-    font-family: "canada-type-gibson",sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    text-decoration: none; }
-  #header-light ul {
+  #header-light #nav ul {
     padding: 0 0 0 20px;
     margin: 0;
     list-style: none; }
-    #header-light ul li {
+    #header-light #nav ul li {
       float: left;
       padding: 0 0 0 20px; }
+      #header-light #nav ul li a {
+        color: #585858;
+        font-family: "canada-type-gibson",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: none; }
+  #header-light #logins .button {
+    margin: 0 20px; }
+  #header-light #logins a {
+    color: #00B5E3;
+    font-family: "canada-type-gibson",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none; }
 
 /* mobile header */
 #header-burger {
@@ -398,7 +418,29 @@ a {
   cursor: pointer; }
 
 #header .mobile-nav {
-  color: #91341D; }
+  color: #585858; }
+
+/* blog banner */
+#blog-banner {
+  height: 60px;
+  background: #85AC0F;
+  position: relative;
+  top: 68px;
+  z-index: 1;
+  text-align: center; }
+  #blog-banner .blog-banner-content {
+    padding: 10px; }
+    #blog-banner .blog-banner-content img {
+      margin: 0 20px 0 0;
+      vertical-align: middle; }
+    #blog-banner .blog-banner-content span, #blog-banner .blog-banner-content span a {
+      color: #fff;
+      font-family: "canada-type-gibson",sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px; }
+      #blog-banner .blog-banner-content span a {
+        text-decoration: underline; }
 
 /* banner */
 #banner {

@@ -51,6 +51,15 @@
 			}
 		}
 	}
+
+	#logins {
+		a {
+			color: $blue;
+			@include type-regular;
+			font-size: 16px;
+			text-decoration: none;
+		}
+	}
 }
 
 
@@ -78,29 +87,36 @@
 		width: auto;
 	}
 	
-	.button {
-		margin-left: 20px;
-		border: 2px solid #6FBF3C;
-		background: #fff;
-		color: #6FBF3C;
-	}
-	
-	a.grey {
-		color: #585858;
-		@include type-bold;
-		font-size: 14px;
-		text-decoration: none;
-	
-	}
-	
-	ul {
-		padding: 0 0 0 20px;
-		margin: 0;
-		list-style: none;
-		
-		li {
-			float: left;
+	#nav {	
+		ul {
 			padding: 0 0 0 20px;
+			margin: 0;
+			list-style: none;
+			
+			li {
+				float: left;
+				padding: 0 0 0 20px;
+
+				a {
+					color: $gray-dark;
+					@include type-regular;
+					font-size: 16px;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	#logins {
+		.button {
+			margin: 0 20px;
+		}
+
+		a {
+			color: $blue;
+			@include type-regular;
+			font-size: 16px;
+			text-decoration: none;
 		}
 	}
 
@@ -156,11 +172,40 @@
 
 #header {
 	.mobile-nav {
-		color: $red;
+		color: $gray-dark;
 	}
 }
 
+/* blog banner */
 
+#blog-banner {
+	height: 60px;
+	background: $green;
+	position: relative;
+	top: 68px;
+	z-index: 1;
+	text-align: center;
+	
+	.blog-banner-content {
+		padding: 10px;
+
+		img {
+			margin: 0 20px 0 0;
+			vertical-align: middle;
+		}
+
+		span {
+			color: $white;
+			@include type-light;
+			font-size: 18px;
+
+			a {
+				@extend span;
+				text-decoration: underline;
+			}
+		}
+	}
+}
 
 /* banner */
 

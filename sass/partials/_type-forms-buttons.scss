@@ -105,10 +105,11 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {border:0;padding:0;
 }
 
 .button {
-	background: $orange;
-	color: $orange-dark;	
-	@include type-bold;
+	background: $blue;
+	color: $white;	
+	@include type-regular;
 	cursor: pointer;
+	border: 0;
 	
 	&.green {
 		background: #6FBF3C;
