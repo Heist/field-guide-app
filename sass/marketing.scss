@@ -15,7 +15,7 @@
 	padding: 0;
 	margin: 0;
 	width: 100%;
-	background: transparentize($orange,0.1);
+	background: $white;
 	padding: 20px 30px 15px 30px;
 	position: fixed;
 	top: 0;
@@ -31,26 +31,26 @@
 		margin-left: 20px;
 	}
 	
-	a.red {
-		color: $red;
-		@include type-bold;
-		font-size: 14px;
-		text-decoration: none;
-		
-	}
-	
-	ul {
-		padding: 0 0 0 20px;
-		margin: 0;
-		list-style: none;
-		
-		li {
-			float: left;
+	#nav {
+
+		ul {
 			padding: 0 0 0 20px;
+			margin: 0;
+			list-style: none;
+			
+			li {
+				float: left;
+				padding: 0 0 0 20px;
+				
+				a {
+					color: $gray-dark;
+					@include type-regular;
+					font-size: 16px;
+					text-decoration: none;
+				}
+			}
 		}
 	}
-	
-
 }
 
 
@@ -167,7 +167,7 @@
 #banner {
 	height: 94%;
 	color: $white;
-	background: $orange url('../img/mountains.png') no-repeat bottom center;
+	background: $white url('../img/mountains.png') no-repeat bottom center;
 	background-size: contain;
 	margin: 0;
 	padding: 0;

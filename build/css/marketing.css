@@ -76,7 +76,7 @@
 custom fonts
 ========================
 */
-/* p n a */
+/* gibson */
 /* base styles */
 html, body {
   padding: 0;
@@ -88,7 +88,7 @@ body {
   color: #3B4447;
   font-size: 16px;
   line-height: 22px;
-  font-family: "proxima-nova",sans-serif;
+  font-family: "canada-type-gibson",sans-serif;
   font-style: normal;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -108,7 +108,7 @@ h1, h2, h3 {
 h1 {
   font-size: 40px;
   line-height: 40px;
-  font-family: "proxima-nova",sans-serif;
+  font-family: "canada-type-gibson",sans-serif;
   font-style: normal;
   font-weight: 300;
   text-align: center;
@@ -117,7 +117,7 @@ h1 {
 h2 {
   font-size: 30px;
   line-height: 30px;
-  font-family: "proxima-nova",sans-serif;
+  font-family: "canada-type-gibson",sans-serif;
   font-style: normal;
   font-weight: 300;
   letter-spacing: -1px; }
@@ -131,19 +131,19 @@ h4 {
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "proxima-nova",sans-serif;
+  font-family: "canada-type-gibson",sans-serif;
   font-style: normal;
   font-weight: 600;
   opacity: 0.5; }
 
 strong, em {
   font-style: normal;
-  font-family: "proxima-nova",sans-serif;
+  font-family: "canada-type-gibson",sans-serif;
   font-style: normal;
   font-weight: 600; }
 
 a {
-  font-family: "proxima-nova",sans-serif;
+  font-family: "canada-type-gibson",sans-serif;
   font-style: normal;
   font-weight: 600;
   color: #872717;
@@ -155,7 +155,7 @@ a {
 /* forms */
 .input, .textarea, .button {
   border-radius: 3px;
-  font-family: "proxima-nova",sans-serif;
+  font-family: "canada-type-gibson",sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -178,7 +178,7 @@ a {
 .button {
   background: #f5795b;
   color: #872717;
-  font-family: "proxima-nova",sans-serif;
+  font-family: "canada-type-gibson",sans-serif;
   font-style: normal;
   font-weight: 600;
   cursor: pointer; }
@@ -220,11 +220,11 @@ a {
   font-size: 32px; }
   .plan-price-point big {
     font-size: 64px;
-    font-family: "proxima-nova",sans-serif;
+    font-family: "canada-type-gibson",sans-serif;
     font-style: normal;
     font-weight: 300; }
   .plan-price-point span {
-    font-family: "proxima-nova",sans-serif;
+    font-family: "canada-type-gibson",sans-serif;
     font-style: normal;
     font-weight: 100;
     opacity: 0.8; }
@@ -240,7 +240,7 @@ a {
   text-transform: uppercase;
   font-size: 12.8px;
   letter-spacing: 4px;
-  font-family: "proxima-nova",sans-serif;
+  font-family: "canada-type-gibson",sans-serif;
   font-style: normal;
   font-weight: 600; }
   .plan-name small {
@@ -296,7 +296,7 @@ a {
   padding: 0;
   margin: 0;
   width: 100%;
-  background: rgba(245, 121, 91, 0.9);
+  background: #fff;
   padding: 20px 30px 15px 30px;
   position: fixed;
   top: 0;
@@ -307,20 +307,20 @@ a {
     width: auto; }
   #header .button {
     margin-left: 20px; }
-  #header a.red {
-    color: #91341D;
-    font-family: "proxima-nova",sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    text-decoration: none; }
-  #header ul {
+  #header #nav ul {
     padding: 0 0 0 20px;
     margin: 0;
     list-style: none; }
-    #header ul li {
+    #header #nav ul li {
       float: left;
       padding: 0 0 0 20px; }
+      #header #nav ul li a {
+        color: #585858;
+        font-family: "canada-type-gibson",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: none; }
 
 /* alt-header */
 #header-light {
@@ -347,7 +347,7 @@ a {
     color: #6FBF3C; }
   #header-light a.grey {
     color: #585858;
-    font-family: "proxima-nova",sans-serif;
+    font-family: "canada-type-gibson",sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -374,7 +374,7 @@ a {
   z-index: 900; }
   #header-burger a.grey {
     color: #585858;
-    font-family: "proxima-nova",sans-serif;
+    font-family: "canada-type-gibson",sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -390,7 +390,7 @@ a {
 .mobile-nav {
   display: none;
   font-size: 40px;
-  font-family: "proxima-nova",sans-serif;
+  font-family: "canada-type-gibson",sans-serif;
   font-style: normal;
   font-weight: 600;
   padding: 0;
@@ -404,7 +404,7 @@ a {
 #banner {
   height: 94%;
   color: #fff;
-  background: #f5795b url('../img/mountains.png') no-repeat bottom center;
+  background: #fff url('../img/mountains.png') no-repeat bottom center;
   background-size: contain;
   margin: 0;
   padding: 0;
@@ -464,7 +464,7 @@ a {
   background: #F7F7F7; }
   #whatcanyoutest h2 {
     text-align: center;
-    font-family: "proxima-nova",sans-serif;
+    font-family: "canada-type-gibson",sans-serif;
     font-style: normal;
     font-weight: 300;
     margin-bottom: 40px; }
@@ -608,7 +608,7 @@ a {
     margin: 0; }
 
 #faq-content h2 {
-  font-family: "proxima-nova",sans-serif;
+  font-family: "canada-type-gibson",sans-serif;
   font-style: normal;
   font-weight: 100;
   opacity: 0.6;
