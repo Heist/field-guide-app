@@ -26,7 +26,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('scripts', function() {
-	return gulp.src(['js/lib/*.js', 'js/scripts.js'])
+	return gulp.src(['js/lib/jquery.js', 'js/lib/jquery.waypoints.js', 'js/lib/jquery.placeholder.js', 'js/scripts.js'])
 		.pipe(jshint())
 		.pipe(jshint.reporter('default'))
 		.pipe(concat('scripts.js'))
@@ -39,7 +39,7 @@ gulp.task('scripts', function() {
 
 var imgDest = 'build/img';
 gulp.task('images', function() {
-    return gulp.src('img/*')
+    return gulp.src('img/**/*')
       .pipe(newer(imgDest)).on('error', errorHandler)
       .pipe(imagemin({
             optimizationLevel: 5,
@@ -61,7 +61,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', function() {
-    gulp.start('sass', 'scripts', 'images', 'watch');
+    gulp.start('sass', 'scripts', 'images');
 });
 
 
