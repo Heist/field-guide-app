@@ -1,0 +1,46 @@
+/* grid stuff */
+
+.frame {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.content {
+	width: 80%;
+	max-width: $max-width;
+	min-width: $min-width;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.col-full {
+	width: 100%;
+}
+
+.col-half {
+	float: left;
+	width: 50%;
+	padding: 0 30px 30px 30px;
+}
+
+.col-third {
+	float: left;
+	width: 33%;
+}
+
+.col-twothirds {
+	width: 66%;
+}
+
+.col-quarter {
+	float: left;
+	width: 25%;
+	padding: 0 15px 30px 15px;
+}
+
+.col-threequarters {
+	float: left;
+	width: 75%;
+	padding: 0 15px 30px 15px;
+}

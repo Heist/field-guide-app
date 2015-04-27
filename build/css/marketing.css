@@ -1,11 +1,197 @@
 /* Field Guide marketing site */
-/* VARS */
+/* colours */
+/* grid stuff */
+.frame {
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+.content {
+  width: 80%;
+  max-width: 980px;
+  min-width: 280px;
+  padding: 0;
+  margin: 0 auto; }
+
+.col-full {
+  width: 100%; }
+
+.col-half {
+  float: left;
+  width: 50%;
+  padding: 0 30px 30px 30px; }
+
+.col-third {
+  float: left;
+  width: 33%; }
+
+.col-twothirds {
+  width: 66%; }
+
+.col-quarter {
+  float: left;
+  width: 25%;
+  padding: 0 15px 30px 15px; }
+
+.col-threequarters {
+  float: left;
+  width: 75%;
+  padding: 0 15px 30px 15px; }
+
+/* box-model all the things! */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+/* helper classes */
+.align-right {
+  text-align: right; }
+
+.align-left {
+  text-align: left; }
+
+.align-center {
+  text-align: center; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.text-center {
+  text-align: center; }
+
+.clear {
+  padding: 0;
+  margin: 0;
+  height: 0;
+  width: 0;
+  clear: both; }
+
+.tag {
+  color: #00BFF3; }
+
 /* mixins */
 /*
 custom fonts
 ========================
 */
 /* p n a */
+/* base styles */
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%; }
+
+body {
+  background: #fff;
+  color: #3B4447;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1"; }
+
+h1, h2, h3 {
+  padding: 0;
+  margin: 0 0 20px 0; }
+  h1.underline span, h2.underline span, h3.underline span {
+    border-bottom: 4px solid rgba(59, 68, 71, 0.1); }
+
+h1 {
+  font-size: 40px;
+  line-height: 40px;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: -1px; }
+
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -1px; }
+
+h3 {
+  font-size: 20px;
+  line-height: 24px; }
+
+h4 {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  opacity: 0.5; }
+
+strong, em {
+  font-style: normal;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600; }
+
+a {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #872717;
+  text-decoration: none;
+  cursor: pointer; }
+  a:hover {
+    text-decoration: underline; }
+
+/* forms */
+.input, .textarea, .button {
+  border-radius: 3px;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 12px 14px;
+  outline: none; }
+
+.button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+.input, .textarea {
+  border: 2px solid #cbc2bb;
+  background: none; }
+
+.placeholder {
+  color: #4d423a; }
+
+.button {
+  background: #f5795b;
+  color: #872717;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer; }
+  .button.green {
+    background: #6FBF3C;
+    color: #fff;
+    text-decoration: none;
+    border: none; }
+  .button.hollow {
+    background: transparent;
+    color: #3B4447;
+    border: 2px solid #3B4447; }
+
 /* charging money / skrilla thrilla */
 .plan2 {
   border-left: 1px solid #CDCDCD; }
@@ -106,194 +292,6 @@ custom fonts
     #view-register #view-register-content .register-trees-right {
       left: 105%; }
 
-/* colours */
-/* box-model all the things! */
-*, *:before, *:after {
-  box-sizing: border-box; }
-
-/* helper classes */
-.align-right {
-  text-align: right; }
-
-.align-left {
-  text-align: left; }
-
-.align-center {
-  text-align: center; }
-
-.float-left {
-  float: left; }
-
-.float-right {
-  float: right; }
-
-.text-center {
-  text-align: center; }
-
-.clear {
-  padding: 0;
-  margin: 0;
-  height: 0;
-  width: 0;
-  clear: both; }
-
-.tag {
-  color: #00BFF3; }
-
-/* base styles */
-html, body {
-  padding: 0;
-  margin: 0;
-  height: 100%; }
-
-body {
-  background: #fff;
-  color: #3B4447;
-  font-size: 16px;
-  line-height: 22px;
-  font-family: "proxima-nova",sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  font-feature-settings: "kern";
-  -webkit-font-feature-settings: "kern";
-  -moz-font-feature-settings: "kern";
-  -moz-font-feature-settings: "kern=1"; }
-
-h1, h2, h3 {
-  padding: 0;
-  margin: 0 0 20px 0; }
-  h1.underline span, h2.underline span, h3.underline span {
-    border-bottom: 4px solid rgba(59, 68, 71, 0.1); }
-
-h1 {
-  font-size: 40px;
-  line-height: 40px;
-  font-family: "proxima-nova",sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  text-align: center;
-  letter-spacing: -1px; }
-
-h2 {
-  font-size: 30px;
-  line-height: 30px;
-  font-family: "proxima-nova",sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  letter-spacing: -1px; }
-
-h3 {
-  font-size: 20px;
-  line-height: 24px; }
-
-h4 {
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "proxima-nova",sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  opacity: 0.5; }
-
-strong, em {
-  font-style: normal;
-  font-family: "proxima-nova",sans-serif;
-  font-style: normal;
-  font-weight: 600; }
-
-a {
-  font-family: "proxima-nova",sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  color: #872717;
-  text-decoration: none;
-  cursor: pointer; }
-  a:hover {
-    text-decoration: underline; }
-
-/* grid stuff */
-.frame {
-  width: 100%;
-  padding: 0;
-  margin: 0; }
-
-.content {
-  width: 80%;
-  max-width: 980px;
-  min-width: 280px;
-  padding: 0;
-  margin: 0 auto; }
-
-.col-full {
-  width: 100%; }
-
-.col-half {
-  float: left;
-  width: 50%;
-  padding: 0 30px 30px 30px; }
-
-.col-third {
-  float: left;
-  width: 33%; }
-
-.col-twothirds {
-  width: 66%; }
-
-.col-quarter {
-  float: left;
-  width: 25%;
-  padding: 0 15px 30px 15px; }
-
-.col-threequarters {
-  float: left;
-  width: 75%;
-  padding: 0 15px 30px 15px; }
-
-/* forms */
-.input, .textarea, .button {
-  border-radius: 3px;
-  font-family: "proxima-nova",sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  padding: 12px 14px;
-  outline: none; }
-
-.button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-  margin: 0; }
-
-.input, .textarea {
-  border: 2px solid #cbc2bb;
-  background: none; }
-
-.placeholder {
-  color: #4d423a; }
-
-.button {
-  background: #f5795b;
-  color: #872717;
-  font-family: "proxima-nova",sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  cursor: pointer; }
-  .button.green {
-    background: #6FBF3C;
-    color: #fff;
-    text-decoration: none;
-    border: none; }
-  .button.hollow {
-    background: transparent;
-    color: #3B4447;
-    border: 2px solid #3B4447; }
-
-/* pieces */
 #header {
   padding: 0;
   margin: 0;

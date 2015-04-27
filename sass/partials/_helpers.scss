@@ -1,0 +1,46 @@
+/* box-model all the things! */
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box; 
+ 	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+/* helper classes */
+
+.align-right {
+	text-align: right;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.clear {
+	padding: 0;
+	margin: 0;
+	height: 0;
+	width: 0;
+	clear: both;
+}
+
+.tag {
+	color: #00BFF3;
+}
+
