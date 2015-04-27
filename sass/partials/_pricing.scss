@@ -1,0 +1,103 @@
+/* charging money / skrilla thrilla */
+
+.plan2{
+	border-left: 1px solid #CDCDCD;
+}
+
+.plan-type {
+	padding: 0 20px;
+	margin: 0 0 30px 0;
+	
+	.button {
+		display: block;
+		margin: 0 auto;
+	}
+	
+	&.disabled {
+		opacity: 0.5;
+	}
+
+	.tagline{
+		width:200px;
+		margin:0 auto;
+	}
+
+	.plan-features{
+		width:260px;
+		margin:0 auto;
+
+		li{
+			padding:3px 0;
+		}
+	}
+}
+
+.plan-price-point {
+	display: block;
+	margin: 0 0 30px 0;
+	padding: 20px 0 0 0;
+	font-size: $type-size-base*2;
+	
+	big {
+		font-size: $type-size-base*4;
+		@include type-light;
+	}
+	
+	span {
+		@include type-extralight;
+		opacity: 0.8;
+	}
+	
+	small {
+		font-size: $type-size-base*0.8;
+		display: block;
+		padding: 30px 0 10px 0;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+		color: #3B4447;
+	}
+}
+
+.plan-name {
+	color: #2a687d;
+	text-transform: uppercase;
+	font-size: $type-size-base*0.8;
+	letter-spacing: 4px;
+	@include type-bold;
+	
+	small {
+		letter-spacing: 0;
+		text-transform: none;
+		color: #3B4447;
+	}
+}
+
+
+
+.upgrade-notice {
+	padding: 20px 20px 15px 20px;
+	margin: 0 0 60px 0;
+	border: 1px solid #3B4447;
+	@include radius;
+	
+	h3 {
+		margin: 0;
+	}
+}
+
+@media (max-width: 800px) {
+
+	#general .general-title{
+		padding: 0 20px;
+	}
+
+	.plan-type.col-half{
+
+		float:none;
+		width:auto;
+	}
+
+	.plan2{
+		border:none;
+	}
+
+}

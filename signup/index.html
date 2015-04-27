@@ -1,0 +1,193 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Field Guide &mdash; Sign up</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="../scripts/jquery.placeholder.js"></script>
+<script src="../scripts/jquery.waypoints.js"></script>
+
+
+<!-- TypeKit -->
+<script type="text/javascript" src="//use.typekit.net/zpj0pdb.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<!-- CSS -->
+<link href="../css/marketing.css" rel="stylesheet" type="text/css">
+
+
+<meta name="viewport" content="width=device-width" />
+
+</head>
+
+<body>
+
+
+
+
+
+<!-- alt header -->
+<div class="frame visible" id="header-light">
+
+		
+			<div id="logo" class="float-left">
+				<a href="/"><img src="../img/fg-binocs-alt-header.png" /></a>		
+			</div>
+			
+			<div id="nav" class="float-left">
+				<ul>
+					<li><a class="grey" href="/">Features</a></li>
+					<li><a class="grey" href="/pricing/">Pricing</a></li>
+					<li><a class="grey" href="/faq/">FAQ</a></li>
+				</ul>
+			</div>
+			
+			<div class="float-right" id="logins">
+				<a class="grey" href="http://projects.fieldguideapp.com/login">Log in</a>
+				
+				<a class="button green" href="/signup/">Sign up for free</a>
+			</div>
+			
+			<div class="float-right mobile-nav">&hellip;</div>
+			
+			<div class="clear"></div>
+	
+</div>
+<!-- / alt header -->
+
+
+<!-- mobile header -->
+<div id="header-burger">
+	<ul>
+		<li><a class="grey" href="/">Features</a></li>
+		<li><a class="grey" href="/pricing/">Pricing</a></li>
+		<li><a class="grey" href="/faq/">FAQ</a></li>
+		<li><a class="grey" href="http://projects.fieldguideapp.com/login">Login</a><br></li>
+	</ul>
+		<a class="button green" href="/signup/">Sign up for Free</a>
+</div>
+<!-- / mobile header -->
+
+
+<div class="frame grey-bg" id="general">
+	<div class="general-title">
+		<h1>Welcome to better testing &amp; better customer insights.</h1>
+	</div>	
+</div>
+
+
+<div class="frame" id="view-register">
+
+	<div class="content">
+		<!-- signup content -->
+		
+				
+			<p class="text-center">Enjoy a <strong>30-day unrestricted trial</strong> — no credit card required!</p>	
+	
+			
+			<div class="clear"></div>
+		
+			<div class="col-third">&nbsp;</div>
+			
+			
+			
+			<div class="col-third" id="view-register-content">
+						
+
+						
+				<form action="//fieldguideapp.us9.list-manage.com/subscribe/post?u=40b9953ab5c6f50e8ae41afde&amp;id=62d15f47b0" method="post">
+					<ul>
+						<li><input id="fieldEmail" class="input" name="EMAIL" type="email" placeholder="Your e-mail address" required /></li>
+						<li><input id="fieldjrqkl" class="input" name="FNAME" type="text" placeholder="Your role (optional)" /></li>
+						<li><button type="submit" class="button green">Put me on the list</button></li>
+					</ul>
+				</form>
+		
+				
+				
+				
+<!-- 				<div class="register-trees-left"><img src="../img/signup-trees-left.png" /></div>
+				<div class="register-trees-right"><img src="../img/signup-trees-right.png" /></div> -->
+				
+
+				
+			</div>
+			
+			
+			<div class="clear"></div>
+		
+		
+		
+		<!-- / signup content -->
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- footer -->
+
+
+<div class="frame" id="footer">
+	<div class="content">
+		
+		<div class="col-full">
+			&copy; Field Guide. Built with &#10084; in Toronto by <a href="http://heistmade.com" target="_">Heist</a>.
+		</div>
+	
+	</div>
+</div>
+
+
+
+
+<script>
+	$(window).load(function(){  
+		$('input, textarea').placeholder();
+	}); 
+	
+	
+	$(document).ready(function() {
+		
+		var $scrollingDiv = $("#faq-nav ul");
+
+		 
+		$(window).scroll(function(){
+			$scrollingAmount = $(window).scrollTop() - 180;
+			
+			console.log($scrollingAmount);
+			if ($scrollingAmount < 0) {
+				$scrollingAmount = 0;
+			}
+			$scrollingDiv.stop().animate({"marginTop": $scrollingAmount + "px"}, 'slow' );
+		});
+		
+		
+		$('.mobile-nav').click(function() {
+			$('#header-burger').fadeToggle();
+		});
+
+	});
+	
+	
+	
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38085594-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,442 @@
+/* Field Guide marketing site */
+/* mixins */
+/*
+custom fonts
+========================
+*/
+/* p n a */
+/* VARS */
+/* colours */
+/* box-model all the things! */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* helper classes */
+.align-right {
+  text-align: right; }
+
+.align-left {
+  text-align: left; }
+
+.align-center {
+  text-align: center; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.clear {
+  padding: 0;
+  margin: 0;
+  height: 0;
+  width: 0;
+  clear: both; }
+
+/* base styles */
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%; }
+
+body {
+  background: #fff;
+  color: #3B4447;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1"; }
+
+h1, h2, h3 {
+  padding: 0;
+  margin: 0 0 20px 0; }
+  h1.underline span, h2.underline span, h3.underline span {
+    border-bottom: 4px solid rgba(59, 68, 71, 0.1); }
+
+h1 {
+  font-size: 40px;
+  line-height: 40px;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: -1px; }
+
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -1px; }
+
+h3 {
+  font-size: 20px;
+  line-height: 24px; }
+
+h4 {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  opacity: 0.5; }
+
+strong, em {
+  font-style: normal;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600; }
+
+/* grid stuff */
+.frame {
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+.content {
+  width: 80%;
+  max-width: 980px;
+  min-width: 280px;
+  padding: 0;
+  margin: 0 auto; }
+
+.col-full {
+  width: 100%; }
+
+.col-half {
+  width: 50%;
+  padding: 0 30px 30px 30px; }
+
+.col-third {
+  width: 33%; }
+
+.col-twothirds {
+  width: 66%; }
+
+.col-quarter {
+  width: 25%;
+  padding: 0 15px 30px 15px; }
+
+/* forms */
+.input, .textarea, .button {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 12px 14px;
+  outline: none; }
+
+.button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+.input, .textarea {
+  border: 2px solid #cbc2bb;
+  background: none; }
+
+.placeholder {
+  color: #4d423a; }
+
+.button {
+  background: #f5795b;
+  color: #872717;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer; }
+  .button.green {
+    background: #6FBF3C;
+    color: #fff;
+    text-decoration: none;
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }
+
+/* pieces */
+#header {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: rgba(245, 121, 91, 0.9);
+  padding: 12px 0 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999; }
+  #header img {
+    height: 26px;
+    width: auto; }
+
+/* banner */
+#banner {
+  height: 100%;
+  color: #fff;
+  background: #f5795b url("../img/gfx/Mountains.png") no-repeat center bottom;
+  background-size: contain;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative; }
+  #banner #banner-content {
+    position: absolute;
+    width: 100%;
+    padding: 0 10%;
+    left: 0;
+    top: 40%; }
+    #banner #banner-content h1 {
+      margin: 0 auto 40px auto;
+      font-size: 3.5em;
+      line-height: 1em;
+      letter-spacing: -1px;
+      font-family: "proxima-nova",sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      -moz-text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+      -webkit-text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+      max-width: 700px; }
+    #banner #banner-content h3 {
+      margin-bottom: 80px;
+      font-family: "proxima-nova",sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      -moz-text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+      -webkit-text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }
+    #banner #banner-content .button {
+      font-size: 18px;
+      font-family: "proxima-nova",sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      padding: 20px 30px; }
+
+/* overview */
+#overview {
+  padding: 0;
+  margin: 0; }
+  #overview .col-full {
+    padding: 16% 0;
+    max-height: 700px; }
+  #overview .one {
+    background: white url("../img/gfx/TreeDivider1.png") no-repeat center bottom; }
+  #overview .two {
+    background: white url("../img/gfx/TreeDivider1.png") no-repeat center bottom; }
+  #overview h2 {
+    color: #4d423a; }
+  #overview .feature-image {
+    width: 45%; }
+    #overview .feature-image img {
+      width: 100%;
+      height: auto; }
+  #overview .feature-copy {
+    width: 45%;
+    padding: 100px 20px 0 20px; }
+
+/* what can you test */
+#whatcanyoutest {
+  padding: 70px 0 30px 0;
+  margin: 0;
+  background: #F7F7F7; }
+  #whatcanyoutest h2 {
+    text-align: center;
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    margin-bottom: 40px; }
+  #whatcanyoutest h3 {
+    margin-bottom: 5px; }
+  #whatcanyoutest p {
+    margin: 0; }
+  #whatcanyoutest ul.points {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    #whatcanyoutest ul.points li {
+      float: left;
+      width: 50%;
+      padding: 5px 20px 40px 50px;
+      margin: 0; }
+      #whatcanyoutest ul.points li p {
+        color: #676767; }
+  #whatcanyoutest #icon-ethno {
+    background: url("../img/icons/ethno.svg") no-repeat left top;
+    background-size: 28px 28px; }
+  #whatcanyoutest #icon-prototypes {
+    background: url("../img/icons/prototypes.svg") no-repeat left top;
+    background-size: 28px 28px; }
+  #whatcanyoutest #icon-wireframes {
+    background: url("../img/icons/wireframes.svg") no-repeat left top;
+    background-size: 28px 28px; }
+  #whatcanyoutest #icon-usability {
+    background: url("../img/icons/usability.svg") no-repeat left top;
+    background-size: 28px 28px; }
+  #whatcanyoutest #icon-websites {
+    background: url("../img/icons/websites.svg") no-repeat left top;
+    background-size: 28px 28px; }
+  #whatcanyoutest #icon-competition {
+    background: url("../img/icons/competition.svg") no-repeat left top;
+    background-size: 28px 28px; }
+
+/* how it works */
+#howitworks {
+  padding: 70px 0 50px 0;
+  margin: 0; }
+  #howitworks .col-full {
+    padding: 12% 0; }
+  #howitworks p {
+    max-width: 600px;
+    text-align: centre;
+    margin: 0 auto; }
+  #howitworks h2 {
+    color: #4d423a; }
+  #howitworks #feature-research {
+    text-align: center; }
+    #howitworks #feature-research img {
+      display: block;
+      width: 70%;
+      height: auto;
+      margin: 0 auto 40px auto;
+      padding: 0; }
+  #howitworks #feature-review .feature-image, #howitworks #feature-runtest .feature-image {
+    width: 70%; }
+    #howitworks #feature-review .feature-image img, #howitworks #feature-runtest .feature-image img {
+      width: 100%;
+      height: auto; }
+  #howitworks #feature-review .feature-copy, #howitworks #feature-runtest .feature-copy {
+    padding-top: 40px;
+    width: 30%; }
+
+/* footer CTA */
+#footerCTA {
+  text-align: center;
+  font-size: 22px;
+  padding: 40px 0;
+  background: #665956;
+  color: #fff; }
+
+/* mailing list */
+.signup {
+  display: none;
+  padding: 40px 0; }
+  .signup .formfield {
+    float: left; }
+  .signup .field-name, .signup .field-email {
+    width: 45%;
+    padding: 0 10px 0 0;
+    margin: 0; }
+    .signup .field-name input, .signup .field-email input {
+      width: 100%; }
+  .signup .field-button {
+    width: 10%; }
+    .signup .field-button button {
+      width: 100%; }
+  .signup h3 {
+    padding: 0;
+    margin: 0 0 10px 0; }
+
+/* footer */
+#footer {
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 40px 0 70px 0;
+  margin: 0;
+  color: #fff;
+  background: #403836; }
+  #footer a {
+    color: #fff; }
+
+/* thanks page */
+.thanks-page {
+  padding-top: 120px !important; }
+  .thanks-page h1, .thanks-page p {
+    text-align: left !important; }
+  .thanks-page h1 {
+    width: 100% !important;
+    margin: 0 !important; }
+
+/* media queries */
+@media (max-width: 1000px) {
+  #overview .col-full .feature-copy {
+    padding-top: 20px; }
+
+  #howitworks #feature-runtest .feature-image, #howitworks #feature-review .feature-image, #howitworks #feature-research .feature-image {
+    width: 45%; }
+  #howitworks #feature-runtest .feature-copy, #howitworks #feature-review .feature-copy, #howitworks #feature-research .feature-copy {
+    padding-top: 20px;
+    width: 45%; } }
+@media (max-width: 900px) {
+  #whatcanyoutest {
+    padding-bottom: 60px; }
+    #whatcanyoutest ul.points li {
+      width: 100%;
+      float: none;
+      padding: 0 0 20px 50px;
+      margin: 0; } }
+@media (max-width: 600px) {
+  #banner #banner-content {
+    top: 30%; }
+
+  .feature-copy {
+    width: 100% !important; }
+
+  .feature-image {
+    width: 70% !important;
+    float: none;
+    display: block;
+    padding: 0;
+    margin: 0 auto 20px auto; }
+
+  #howitworks .col-full, #overview .col-full {
+    padding: 30px 0 !important; }
+
+  #howitworks h2, #howitworks p {
+    text-align: left !important; }
+
+  #footerCTA {
+    text-align: center; }
+
+  .button.green {
+    width: 80%;
+    display: block;
+    margin: 10px auto 0 auto; } }
+@media (max-width: 400px) {
+  #banner #banner-content {
+    top: 25%; }
+    #banner #banner-content h1 {
+      font-size: 40px;
+      line-height: 40px; } }
+@media (max-width: 320px) {
+  #banner #banner-content {
+    top: 25%; }
+    #banner #banner-content h1 {
+      font-size: 30px;
+      line-height: 30px; }
+    #banner #banner-content .button {
+      font-size: 16px; } }
+
+/*# sourceMappingURL=style.css.map */
