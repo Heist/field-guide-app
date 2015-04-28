@@ -182,7 +182,7 @@
 	height: 60px;
 	background: $green;
 	position: relative;
-	top: 68px;
+	top: 67px;
 	z-index: 1;
 	text-align: center;
 	
@@ -211,9 +211,8 @@
 
 #banner {
 	height: 94%;
-	color: $white;
-	background: $white url('../img/mountains.png') no-repeat bottom center;
-	background-size: contain;
+	background: $white url('../img/mountains.svg') top right no-repeat;
+	background-size: 65%;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -226,14 +225,14 @@
 	
 	#banner-content {
 		position: absolute;
-		width: 100%;
-		text-align: center;
 		padding: 0;
 		left: 0;
 		top: 26%;
+		margin: 0 0 0 100px;
+		float: left;
 		
 		h1 {
-			width: 40%;
+			width: 55%;
 			margin: 0 0 15px 0;
 			font-size: 44px;
 			line-height: 50px;
@@ -243,21 +242,31 @@
 		}
 		
 		h3 {
-			width: 35%;
-			margin-bottom: 50px;
+			width: 55%;
+			margin-bottom: 30px;
 			color: $gray;
 			@include type-light;
 			font-size: 20px;
 		}
+	}
+	
+	.feature-image {
+		width: 45%;
+		margin: 135px 10px;
 		
 		img {
-			display: block;
-			padding: 0;
-			margin: 0 auto;
+			width: 100%;
 			height: auto;
-			width: 85%;
-		}
+		}	
 	}
+	// img {
+	// 	width: 100%;
+	// 	display: block;
+	// 	padding: 0;
+	// 	margin: 150px 0;
+	// 	height: auto;
+	// 	float: right;
+	// }
 	
 }
 
@@ -300,11 +309,16 @@
 	padding: 70px 0 30px 0;
 	margin: 0;
 	background: #F7F7F7;
+	img {
+		display: block;
+		margin: 0 auto;
+	}
 	
 	h2 {
 		text-align: center;
-		@include type-light;
-		margin-bottom: 40px;
+		@include type-regular;
+		font-size: 34px;
+		margin: 20px 0;
 	}
 	
 	h3 {
@@ -312,12 +326,19 @@
 	}
 	
 	p {
+		text-align: center;
 		margin: 0;
+
+		a {
+			color: $blue;
+			font-size: 14px;
+			@include type-light;
+		}
 	}
 	
 	ul.points {
 		padding: 0;
-		margin: 0;
+		margin: 40px 0;
 		list-style: none;
 		
 		li {

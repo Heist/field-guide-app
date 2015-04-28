@@ -1,3 +1,7 @@
+img {
+  max-width: 100%;
+}
+
 .clearfix:after {
    content: " "; /* Older browser do not support empty content */
    visibility: hidden;
