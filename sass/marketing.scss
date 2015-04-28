@@ -495,10 +495,18 @@
 
 }
 
-
 /* footer CTA */
 
 #footerCTA {
+	text-align: center;
+	font-size: 22px;
+	padding: 40px 0;
+	color: $gray-dark;
+}
+
+/* footer banner */
+
+#footer-banner {
 	position: relative;
 
 	.back-layer {

@@ -1,54 +1,42 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Field Guide &mdash; Thanks!</title>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="scripts/jquery.placeholder.js"></script>
-
-<!-- TypeKit -->
-<script type="text/javascript" src="//use.typekit.net/zpj0pdb.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
-<link href="../css/marketing.css" rel="stylesheet" type="text/css">
-
-<meta name="viewport" content="width=device-width" />
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+	<title>Field Guide</title>
+	<script type="text/javascript" src="//use.typekit.net/vgs6trg.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<link href="../build/css/marketing.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-
-
-
-<div class="frame" id="header">
-
+	<!-- alt header -->
+	<div class="frame visible" id="header-light">
 		
-			<div id="logo" class="float-left">
-				<a href="/"><img src="../img/fg-binocs-header.png" /></a>		
-			</div>
-			
-			<div id="nav" class="float-left">
-				<ul>
-					<li><a class="red" id="features-click">Features</a></li>
-					<li><a class="red" href="/pricing/">Pricing</a></li>
-					<li><a class="red" href="/faq/">FAQ</a></li>
-				</ul>
-			</div>
-			
-			<div class="float-right" id="logins">
-				<a class="red" href="http://projects.fieldguideapp.com/login">Log in</a>
-				
-				<a class="button green" href="/signup/">Sign up for free</a>
-			</div>
-			
-			
-			<div class="float-right mobile-nav">&hellip;</div>
-			
-			<div class="clear"></div>
-	
-</div>
+		<div id="logo" class="float-left">
+			<a href="/"><img src="../build/img/fg-binocs-gray.svg" /></a>
+		</div>
+		
+		<div id="nav" class="float-left">
+			<ul>
+				<li><a id="features-click2">Features</a></li>
+				<li><a href="/pricing/">Pricing</a></li>
+				<li><a href="/faq/">FAQ</a></li>
+			</ul>
+		</div>
+		
+		<div class="float-right" id="logins">
+			<button class="button" href="/signup/">Start testing now</button>
+			<a href="http://projects.fieldguideapp.com/login">Log in</a>
+		</div>
+		
+		<div class="float-right mobile-nav">&hellip;</div>
+		
+		<div class="clear"></div>
+		
+	</div>
+	<!-- / alt header -->
 
 
 <!-- mobile header -->
@@ -99,23 +87,7 @@
 	</div>
 </div>
 
-
-
-
-<script>
-	$(function() {
-		$('input, textarea').placeholder();		
-	});
-	
-	$(document).ready(function() {
-			
-		$('.mobile-nav').click(function() {
-			$('#header-burger').fadeToggle();
-		});
-
-	});
-</script>
-
+<script src="../build/js/scripts.min.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -1,62 +1,42 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Field Guide &mdash; FAQ</title>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="../scripts/jquery.placeholder.js"></script>
-<script src="../scripts/jquery.waypoints.js"></script>
-
-
-<!-- TypeKit -->
-<script type="text/javascript" src="//use.typekit.net/zpj0pdb.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
-<!-- CSS -->
-<link href="../css/marketing.css" rel="stylesheet" type="text/css">
-
-
-<meta name="viewport" content="width=device-width" />
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+	<title>Field Guide</title>
+	<script type="text/javascript" src="//use.typekit.net/vgs6trg.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<link href="../build/css/marketing.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-
-
-
-
-<!-- alt header -->
-<div class="frame visible" id="header-light">
-
+	<!-- alt header -->
+	<div class="frame visible" id="header-light">
 		
-			<div id="logo" class="float-left">
-				<a href="/"><img src="../img/fg-binocs-alt-header.png" /></a>		
-			</div>
-			
-			<div id="nav" class="float-left">
-				<ul>
-					<li><a class="grey" href="/">Features</a></li>
-					<li><a class="grey" href="/pricing/">Pricing</a></li>
-					<li><a class="grey" href="/faq/">FAQ</a></li>
-				</ul>
-			</div>
-			
-			<div class="float-right" id="logins">
-				<a class="grey" href="http://projects.fieldguideapp.com/login">Log in</a>
-				
-				<a class="button green" href="/signup/">Sign up for free</a>
-			</div>
-			
-			
-			<div class="float-right mobile-nav">&hellip;</div>
-			
-			
-			<div class="clear"></div>
-	
-</div>
-<!-- / alt header -->
+		<div id="logo" class="float-left">
+			<a href="/"><img src="../build/img/fg-binocs-gray.svg" /></a>
+		</div>
+		
+		<div id="nav" class="float-left">
+			<ul>
+				<li><a href="/">Features</a></li>
+				<li><a href="/pricing/">Pricing</a></li>
+				<li><a href="/faq/">FAQ</a></li>
+			</ul>
+		</div>
+		
+		<div class="float-right" id="logins">
+			<button class="button" href="/signup/">Start testing now</button>
+			<a href="http://projects.fieldguideapp.com/login">Log in</a>
+		</div>
+		
+		<div class="float-right mobile-nav">&hellip;</div>
+		
+		<div class="clear"></div>
+		
+	</div>
+	<!-- / alt header -->
 
 
 
@@ -176,59 +156,16 @@
 	</div>
 </div>
 
-
-
-
-
-
-
 <div class="frame" id="footerCTA">
 	<div class="content">
-		
 		<div class="col-full">
-			What are you waiting for? &nbsp;&nbsp; <a href="/signup/" class="button green">Sign up for <em>free</em> today</a>
+			What are you waiting for? &nbsp;&nbsp; <button class="button" href="/signup/">Start testing now</button>
 		</div>
 	
 	</div>
 </div>
-
-
-
-
-
-
-<!-- mailing list -->
-
-<div class="frame signup">
-	<div class="content">
-		
-		<div class="col-full">
-			<h3>Join our mailing list for product announcements and updates.</h3>
-			
-			<!-- signup form -->
-			<form action="http://scouttesting.createsend.com/t/d/s/gthih/" method="post">
-			    
-		        <div class="formfield field-name"><input id="fieldName" name="cm-name" type="text" placeholder="Your name" /></div>
-		    
-		        <div class="formfield field-email"><input id="fieldEmail" name="cm-gthih-gthih" type="email" required placeholder="Your e-mail address" /></div>
-		    
-		        <div class="formfield field-button"><button type="submit">Sign up</button></div>
-			    
-			    <div class="clear"></div>
-			</form>
-			<!-- end signup form -->
-			
-		</div>
-	
-	</div>
-</div>
-
-
-
 
 <!-- footer -->
-
-
 <div class="frame" id="footer">
 	<div class="content">
 		
@@ -238,41 +175,6 @@
 	
 	</div>
 </div>
-
-
-
-
-<script>
-	$(window).load(function(){  
-		$('input, textarea').placeholder();
-	}); 
-	
-	
-	$(document).ready(function() {
-		
-		var $scrollingDiv = $("#faq-nav ul");
-
-		 
-		$(window).scroll(function(){
-			$scrollingAmount = $(window).scrollTop() - 180;
-			
-			console.log($scrollingAmount);
-			if ($scrollingAmount < 0) {
-				$scrollingAmount = 0;
-			}
-			$scrollingDiv.stop().animate({"marginTop": $scrollingAmount + "px"}, 'slow' );
-		});
-		
-		
-		$('.mobile-nav').click(function() {
-			$('#header-burger').fadeToggle();
-		});
-
-	});
-	
-	
-	
-</script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

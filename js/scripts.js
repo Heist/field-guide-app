@@ -29,4 +29,17 @@ $(document).ready(function() {
 		$('#header-burger').fadeToggle();
 	});	
 
+
+	var $scrollingDiv = $("#faq-nav ul");
+
+	$(window).scroll(function(){
+		$scrollingAmount = $(window).scrollTop() - 180;
+		
+		console.log($scrollingAmount);
+		if ($scrollingAmount < 0) {
+			$scrollingAmount = 0;
+		}
+		$scrollingDiv.stop().animate({"marginTop": $scrollingAmount + "px"}, 'slow' );
+	});
+
 });
