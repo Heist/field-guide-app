@@ -67,8 +67,8 @@ strong, em {
 }
 
 a {
-	@include type-bold;
-	color: $orange-dark;
+	@include type-regular;
+	color: $blue;
 	text-decoration: none;
 	cursor: pointer;
 	

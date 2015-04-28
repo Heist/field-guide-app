@@ -155,8 +155,8 @@ strong, em {
 a {
   font-family: "canada-type-gibson",sans-serif;
   font-style: normal;
-  font-weight: 600;
-  color: #872717;
+  font-weight: 400;
+  color: #00B5E3;
   text-decoration: none;
   cursor: pointer; }
   a:hover {
@@ -441,12 +441,10 @@ a {
       font-style: normal;
       font-weight: 300;
       font-size: 18px; }
-      #blog-banner .blog-banner-content span a {
-        text-decoration: underline; }
 
 /* banner */
 #banner {
-  height: 94%;
+  height: 75%;
   background: #fff url('../img/mountains.svg') top right no-repeat;
   background-size: 65%;
   margin: 0;
@@ -508,8 +506,7 @@ a {
 /* what can you test */
 #whatcanyoutest {
   padding: 70px 0 30px 0;
-  margin: 0;
-  background: #F7F7F7; }
+  margin: 0; }
   #whatcanyoutest img {
     display: block;
     margin: 0 auto; }
@@ -523,7 +520,6 @@ a {
   #whatcanyoutest h3 {
     margin-bottom: 5px; }
   #whatcanyoutest a {
-    color: #00B5E3;
     font-size: 14px;
     font-family: "canada-type-gibson",sans-serif;
     font-style: normal;
@@ -584,58 +580,72 @@ a {
 /* how it works */
 #howitworks {
   padding: 70px 0 50px 0;
-  margin: 0; }
+  margin: 0;
+  background: #FAFAFA; }
   #howitworks .howitworks-title {
     text-align: center;
     padding: 20px 0; }
-    #howitworks .howitworks-title h1 {
-      margin: 0 0 30px 0; }
+    #howitworks .howitworks-title h2 {
+      margin: 0 0 30px 0;
+      color: #2B404D;
+      font-size: 34px;
+      font-family: "canada-type-gibson",sans-serif;
+      font-style: normal;
+      font-weight: 400; }
     #howitworks .howitworks-title img {
       width: 180px;
       height: auto; }
   #howitworks .col-full {
-    padding: 140px 0; }
+    padding: 100px 0; }
   #howitworks h2 {
     color: #4d423a; }
-  #howitworks #feature-f3 {
-    text-align: center;
-    padding-bottom: 50px; }
-    #howitworks #feature-f3 img {
-      display: block;
-      width: 70%;
-      height: auto;
-      margin: 0 auto 40px auto;
-      padding: 0; }
-    #howitworks #feature-f3 p {
-      width: 500px;
-      margin: 0 auto; }
-  #howitworks #feature-f2 .feature-copy {
+  #howitworks #feature-f1 .feature-copy {
     padding-left: 100px; }
-  #howitworks #feature-f2 .small {
+  #howitworks #feature-f1 .small {
     opacity: 0.6;
     font-size: 12px;
     line-height: 16px; }
-  #howitworks #feature-f2 .testwith img {
+  #howitworks #feature-f1 .testwith img {
     width: 100%;
     height: auto; }
-  #howitworks #feature-f1 {
+  #howitworks #feature-f2 {
     padding-top: 50px; }
-    #howitworks #feature-f1 .feature-copy {
+    #howitworks #feature-f2 .feature-copy {
       padding-right: 100px; }
-  #howitworks #feature-f2 .feature-image, #howitworks #feature-f1 .feature-image {
+  #howitworks #feature-f3 .feature-copy {
+    padding-left: 100px; }
+  #howitworks #feature-f3 .small {
+    opacity: 0.6;
+    font-size: 12px;
+    line-height: 16px; }
+  #howitworks #feature-f3 .testwith img {
+    width: 100%;
+    height: auto; }
+  #howitworks #feature-f3 .feature-image, #howitworks #feature-f2 .feature-image, #howitworks #feature-f1 .feature-image {
     width: 65%; }
-    #howitworks #feature-f2 .feature-image img, #howitworks #feature-f1 .feature-image img {
+    #howitworks #feature-f3 .feature-image img, #howitworks #feature-f2 .feature-image img, #howitworks #feature-f1 .feature-image img {
       width: 100%;
       height: auto; }
-  #howitworks #feature-f2 .feature-copy, #howitworks #feature-f1 .feature-copy {
+  #howitworks #feature-f3 .feature-copy, #howitworks #feature-f2 .feature-copy, #howitworks #feature-f1 .feature-copy {
     padding-top: 12%;
     width: 30%; }
 
 /* footer CTA */
 #footerCTA {
-  text-align: center;
-  font-size: 22px;
-  padding: 40px 0; }
+  position: relative; }
+  #footerCTA .back-layer {
+    width: 100%;
+    height: 100px;
+    background: #FAFAFA url('../img/treeline.svg') bottom right no-repeat;
+    position: absolute;
+    bottom: 20px; }
+  #footerCTA .front-layer {
+    width: 100%;
+    height: 100px;
+    background: #F5A15B;
+    position: absolute;
+    top: -120px;
+    z-index: 1; }
 
 /* mailing list */
 #view-register {

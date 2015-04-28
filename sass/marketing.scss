@@ -201,7 +201,6 @@
 
 			a {
 				@extend span;
-				text-decoration: underline;
 			}
 		}
 	}
@@ -210,7 +209,7 @@
 /* banner */
 
 #banner {
-	height: 94%;
+	height: 75%;
 	background: $white url('../img/mountains.svg') top right no-repeat;
 	background-size: 65%;
 	margin: 0;
@@ -259,15 +258,6 @@
 			height: auto;
 		}	
 	}
-	// img {
-	// 	width: 100%;
-	// 	display: block;
-	// 	padding: 0;
-	// 	margin: 150px 0;
-	// 	height: auto;
-	// 	float: right;
-	// }
-	
 }
 
 
@@ -308,7 +298,7 @@
 #whatcanyoutest {
 	padding: 70px 0 30px 0;
 	margin: 0;
-	background: #F7F7F7;
+
 	img {
 		display: block;
 		margin: 0 auto;
@@ -326,7 +316,6 @@
 	}
 	
 	a {
-		color: $blue;
 		font-size: 14px;
 		@include type-light;
 		text-align: center;
@@ -404,13 +393,17 @@
 #howitworks {
 	padding: 70px 0 50px 0;
 	margin: 0;
+	background: $fg-bg;
 	
 	.howitworks-title {
 		text-align: center;
 		padding: 20px 0;
 		
-		h1 {
+		h2 {
 			margin: 0 0 30px 0;
+			color: $slate;
+			font-size: 34px;
+			@include type-regular;
 		}
 		
 		img {
@@ -420,34 +413,14 @@
 	}
 	
 	.col-full {
-		padding: 140px 0;
+		padding: 100px 0;
 	}
 	
 	h2 {
 		color: $brown;
 	}
 	
-	
-	#feature-f3 {
-		text-align: center;
-		padding-bottom: 50px;
-	
-		img {
-			display: block;
-			width: 70%;
-			height: auto;
-			margin: 0 auto 40px auto;
-			padding: 0;
-		}
-
-		p{
-			width:500px;
-			margin:0 auto;
-		}
-	}
-	
-	#feature-f2 {
-		// padding-top: 20px;
+	#feature-f1 {
 
 		.feature-copy {
 			padding-left: 100px;
@@ -467,7 +440,7 @@
 		}
 	}
 
-	#feature-f1 {
+	#feature-f2 {
 		padding-top: 50px;
 
 		.feature-copy {
@@ -475,7 +448,27 @@
 		}
 	}
 
-	#feature-f2, #feature-f1 {
+	#feature-f3 {
+		
+		.feature-copy {
+			padding-left: 100px;
+		}
+	
+		.small {
+			opacity: 0.6;
+			font-size: 12px;
+			line-height: 16px;
+		}
+		
+		.testwith {
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	#feature-f3, #feature-f2, #feature-f1 {
 	
 		.feature-image {
 			width: 65%;
@@ -500,9 +493,29 @@
 /* footer CTA */
 
 #footerCTA {
-	text-align: center;
-	font-size: 22px;
-	padding: 40px 0;
+	position: relative;
+
+	.back-layer {
+		width: 100%;
+		height: 100px;
+		background: $fg-bg url('../img/treeline.svg') bottom right no-repeat;
+		position: absolute;
+		bottom: 20px;
+		
+	}
+
+	.front-layer {
+		width: 100%;
+		height: 100px;
+		background: $red;
+		position: absolute;
+		top: -120px;
+		z-index: 1;
+		
+		.content {
+		}
+		
+	}
 }
 
 
