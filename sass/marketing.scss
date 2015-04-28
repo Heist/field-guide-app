@@ -325,17 +325,14 @@
 		margin-bottom: 5px;
 	}
 	
-	p {
+	a {
+		color: $blue;
+		font-size: 14px;
+		@include type-light;
 		text-align: center;
-		margin: 0;
-
-		a {
-			color: $blue;
-			font-size: 14px;
-			@include type-light;
-		}
+		display: block;
 	}
-	
+
 	ul.points {
 		padding: 0;
 		margin: 40px 0;
@@ -346,15 +343,23 @@
 			width: 50%;
 			padding: 5px 20px 40px 45px;
 			margin: 0;
+
+			h3 {
+				@include type-regular;
+				color: $gray-med;
+				font-size: 24px;
+			}
 			
 			p {
-				color: #676767;
+				@include type-light;
+				color: $gray-med;
+				font-size: 18px;
 			}
 		}
 	}
 	
 	
-	$types: ethno, prototypes, wireframes, usability, websites, competition;
+	$types: ethno, prototypes, usability,competition;
 			
 	@each $type in $types {
 	#icon-#{$type} {

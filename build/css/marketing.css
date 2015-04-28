@@ -522,15 +522,14 @@ a {
     margin: 20px 0; }
   #whatcanyoutest h3 {
     margin-bottom: 5px; }
-  #whatcanyoutest p {
+  #whatcanyoutest a {
+    color: #00B5E3;
+    font-size: 14px;
+    font-family: "canada-type-gibson",sans-serif;
+    font-style: normal;
+    font-weight: 300;
     text-align: center;
-    margin: 0; }
-    #whatcanyoutest p a {
-      color: #00B5E3;
-      font-size: 14px;
-      font-family: "canada-type-gibson",sans-serif;
-      font-style: normal;
-      font-weight: 300; }
+    display: block; }
   #whatcanyoutest ul.points {
     padding: 0;
     margin: 40px 0;
@@ -540,22 +539,26 @@ a {
       width: 50%;
       padding: 5px 20px 40px 45px;
       margin: 0; }
+      #whatcanyoutest ul.points li h3 {
+        font-family: "canada-type-gibson",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: #777777;
+        font-size: 24px; }
       #whatcanyoutest ul.points li p {
-        color: #676767; }
+        font-family: "canada-type-gibson",sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        color: #777777;
+        font-size: 18px; }
   #whatcanyoutest #icon-ethno {
     background: url("../img/icons/ethno.svg") no-repeat left 4px;
     background-size: 24px 24px; }
   #whatcanyoutest #icon-prototypes {
     background: url("../img/icons/prototypes.svg") no-repeat left 4px;
     background-size: 24px 24px; }
-  #whatcanyoutest #icon-wireframes {
-    background: url("../img/icons/wireframes.svg") no-repeat left 4px;
-    background-size: 24px 24px; }
   #whatcanyoutest #icon-usability {
     background: url("../img/icons/usability.svg") no-repeat left 4px;
-    background-size: 24px 24px; }
-  #whatcanyoutest #icon-websites {
-    background: url("../img/icons/websites.svg") no-repeat left 4px;
     background-size: 24px 24px; }
   #whatcanyoutest #icon-competition {
     background: url("../img/icons/competition.svg") no-repeat left 4px;
