@@ -394,6 +394,19 @@
 	padding: 70px 0 50px 0;
 	margin: 0;
 	background: $fg-bg;
+
+	p {
+		color: $gray;
+		font-size: 20px;
+		@include type-light;
+
+		&.small {
+			opacity: 0.6;
+			font-size: 16px;
+			line-height: 18px;
+		}
+		
+	}
 	
 	.howitworks-title {
 		text-align: center;
@@ -426,12 +439,6 @@
 			padding-left: 100px;
 		}
 	
-		.small {
-			opacity: 0.6;
-			font-size: 12px;
-			line-height: 16px;
-		}
-		
 		.testwith {
 			img {
 				width: 100%;
@@ -452,14 +459,13 @@
 		
 		.feature-copy {
 			padding-left: 100px;
+
+			& a {
+				margin: 0 0 40px 0;
+				display: block;
+			}
 		}
-	
-		.small {
-			opacity: 0.6;
-			font-size: 12px;
-			line-height: 16px;
-		}
-		
+
 		.testwith {
 			img {
 				width: 100%;

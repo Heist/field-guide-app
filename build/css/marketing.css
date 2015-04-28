@@ -133,8 +133,12 @@ h2 {
   letter-spacing: -1px; }
 
 h3 {
-  font-size: 20px;
-  line-height: 24px; }
+  font-size: 32px;
+  line-height: 32px;
+  color: #2B404D;
+  font-family: "canada-type-gibson",sans-serif;
+  font-style: normal;
+  font-weight: 400; }
 
 h4 {
   font-size: 16px;
@@ -582,6 +586,16 @@ a {
   padding: 70px 0 50px 0;
   margin: 0;
   background: #FAFAFA; }
+  #howitworks p {
+    color: #949799;
+    font-size: 20px;
+    font-family: "canada-type-gibson",sans-serif;
+    font-style: normal;
+    font-weight: 300; }
+    #howitworks p.small {
+      opacity: 0.6;
+      font-size: 16px;
+      line-height: 18px; }
   #howitworks .howitworks-title {
     text-align: center;
     padding: 20px 0; }
@@ -601,10 +615,6 @@ a {
     color: #613F24; }
   #howitworks #feature-f1 .feature-copy {
     padding-left: 100px; }
-  #howitworks #feature-f1 .small {
-    opacity: 0.6;
-    font-size: 12px;
-    line-height: 16px; }
   #howitworks #feature-f1 .testwith img {
     width: 100%;
     height: auto; }
@@ -614,10 +624,9 @@ a {
       padding-right: 100px; }
   #howitworks #feature-f3 .feature-copy {
     padding-left: 100px; }
-  #howitworks #feature-f3 .small {
-    opacity: 0.6;
-    font-size: 12px;
-    line-height: 16px; }
+    #howitworks #feature-f3 .feature-copy a {
+      margin: 0 0 40px 0;
+      display: block; }
   #howitworks #feature-f3 .testwith img {
     width: 100%;
     height: auto; }
