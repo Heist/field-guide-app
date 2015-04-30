@@ -142,21 +142,25 @@
 
 
 
-@media (max-width: 824px) {
+@media (max-width: 860px) {
+
+	#banner {
+		#banner-content {
+
+			h1 {
+				width: 70%;
+			}
+		}
+	}
 
 	#footer-banner {
-
 		.front-layer {
-
 			.content {
-
 				.copy {
 					width: 65%;
-
 					h3 {
 						font-size: 23px;
 					}
-
 					p {
 						font-size: 15px;
 					}

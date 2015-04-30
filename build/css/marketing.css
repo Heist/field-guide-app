@@ -814,7 +814,9 @@ a.button {
   #footer-banner .front-layer .content {
     margin: 0 0 0 5%; } }
 
-@media (max-width: 824px) {
+@media (max-width: 860px) {
+  #banner #banner-content h1 {
+    width: 70%; }
   #footer-banner .front-layer .content .copy {
     width: 65%; }
     #footer-banner .front-layer .content .copy h3 {
