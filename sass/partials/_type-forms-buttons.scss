@@ -90,6 +90,12 @@ a {
 	}
 }
 
+a.button {
+	@include type-regular;
+	color: $white;
+	text-decoration: none;
+}
+
 /* forms */
 
 .input, .textarea, .button {
@@ -122,7 +128,11 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {border:0;padding:0;
 	@include type-regular;
 	cursor: pointer;
 	border: 0;
-	
+
+	a {
+		color: $white;
+	}
+
 	&.green {
 		background: #6FBF3C;
 		color: $white;

@@ -51,15 +51,6 @@
 			}
 		}
 	}
-
-	#logins {
-		a {
-			color: $blue;
-			@include type-regular;
-			font-size: 16px;
-			text-decoration: none;
-		}
-	}
 }
 
 
@@ -110,13 +101,6 @@
 	#logins {
 		.button {
 			margin: 0 20px;
-		}
-
-		a {
-			color: $blue;
-			@include type-regular;
-			font-size: 16px;
-			text-decoration: none;
 		}
 	}
 

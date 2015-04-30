@@ -26,7 +26,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('scripts', function() {
-	return gulp.src(['js/lib/jquery.js', 'js/lib/jquery.cycle.all.js', 'js/lib/jquery.cycle.lite.js', 'js/lib/jquery.cycle2.min.js', 'js/lib/jquery.placeholder.js', 'js/lib/jquery.scrollmagic.js', 'js/lib/jquery.slides.js', 'js/lib/jquery.waypoints.js','js/scripts.js'])
+	return gulp.src(['js/lib/jquery.js', 'js/lib/jquery.placeholder.js', 'js/lib/jquery.scrollmagic.js', 'js/lib/jquery.slides.js', 'js/lib/jquery.waypoints.js','js/scripts.js'])
 		.pipe(jshint())
 		.pipe(jshint.reporter('default'))
 		.pipe(concat('scripts.js'))

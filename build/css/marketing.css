@@ -172,6 +172,13 @@ a {
   a:hover {
     text-decoration: underline; }
 
+a.button {
+  font-family: "canada-type-gibson",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none; }
+
 /* forms */
 .input, .textarea, .button {
   border-radius: 3px;
@@ -203,6 +210,8 @@ a {
   font-weight: 400;
   cursor: pointer;
   border: 0; }
+  .button a {
+    color: #fff; }
   .button.green {
     background: #6FBF3C;
     color: #fff;
@@ -342,13 +351,6 @@ a {
         font-weight: 400;
         font-size: 16px;
         text-decoration: none; }
-  #header #logins a {
-    color: #00B5E3;
-    font-family: "canada-type-gibson",sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    text-decoration: none; }
 
 /* alt-header */
 #header-light {
@@ -384,13 +386,6 @@ a {
         text-decoration: none; }
   #header-light #logins .button {
     margin: 0 20px; }
-  #header-light #logins a {
-    color: #00B5E3;
-    font-family: "canada-type-gibson",sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    text-decoration: none; }
 
 /* mobile header */
 #header-burger {

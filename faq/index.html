@@ -6,6 +6,9 @@
 	<title>Field Guide</title>
 	<script type="text/javascript" src="//use.typekit.net/vgs6trg.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="../js/lib/jquery.placeholder.js"></script>
+	<script src="../js/lib/jquery.waypoints.js"></script>
 	<link href="../build/css/marketing.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -175,6 +178,35 @@
 	
 	</div>
 </div>
+
+<script>
+	$(window).load(function(){  
+		$('input, textarea').placeholder();
+	}); 
+	
+	
+	$(document).ready(function() {
+		
+		var $scrollingDiv = $("#faq-nav ul");
+
+		 
+		$(window).scroll(function(){
+			$scrollingAmount = $(window).scrollTop() - 180;
+			
+			console.log($scrollingAmount);
+			if ($scrollingAmount < 0) {
+				$scrollingAmount = 0;
+			}
+			$scrollingDiv.stop().animate({"marginTop": $scrollingAmount + "px"}, 'slow' );
+		});
+		
+		
+		$('.mobile-nav').click(function() {
+			$('#header-burger').fadeToggle();
+		});
+
+	});
+</script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
