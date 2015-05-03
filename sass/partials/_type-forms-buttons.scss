@@ -94,6 +94,7 @@ a.button {
 	@include type-regular;
 	color: $white;
 	text-decoration: none;
+	display: inline-block;
 }
 
 /* forms */
