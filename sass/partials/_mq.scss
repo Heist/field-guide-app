@@ -31,9 +31,6 @@
 	#banner {
 		height: 80%;
 
-		#banner-content {
-			margin: 15% 0 0 5%;
-		}
 		.feature-banner-image {
 			margin: 15% 0;
 		}
@@ -74,7 +71,7 @@
 		height: 100%;
 
 		#banner-content {
-			margin: 15% auto 0 auto;
+			margin: 5% auto 0 auto;
 			width: 100%;
 			text-align: center;
 
@@ -95,7 +92,7 @@
 
 		.feature-banner-image {
 			width: 100%;
-			margin: 60px auto 130px auto;
+			margin: 30px auto;
 		}
 	}
 
@@ -188,20 +185,8 @@
 @media (max-width: 675px) {
 
 	#blog-banner {
-		height: 60px;
-		background: $green;
-		position: relative;
-		top: 67px;
-		z-index: 1;
-		text-align: center;
 		
 		.blog-banner-content {
-			padding: 10px;
-
-			img {
-				margin: 0 20px 0 0;
-				vertical-align: middle;
-			}
 
 			p {
 				font-size: 16px;
@@ -214,8 +199,21 @@
 		#banner-content {
 
 			h1, h3 {
-				width: 100%;
+				width: 90%;
 			}
+
+			a.button {
+				display: none;
+			}
+
+			.feature-banner-image {
+				margin: 30px auto;
+			}
+		}
+
+		.mobile-button {
+			display: block !important;
+			text-align: center;
 		}
 	}
 	
@@ -243,7 +241,7 @@
 	}
 
 	#whatcanyoutest {
-		padding: 0;
+		padding: 130px 0;
 	}
 	
 	#footerCTA {
@@ -278,11 +276,6 @@
 
 @media (max-width: 605px) {
 	#blog-banner {
-		height: 60px;
-		background: $green;
-		position: relative;
-		top: 67px;
-		z-index: 1;
 		
 		.blog-banner-content {
 			padding: 10px 10px 10px 15px;
@@ -324,13 +317,27 @@
 	}
 
 	#banner {
+		height: 85%;
 
 		#banner-content {
-			top: 12%;
-			
+
 			h1 {
-				font-size: 40px;
-				line-height: 40px;
+				font-size: 30px;
+				line-height: 30px;
+			}
+
+			h3 {
+				font-size: 18px;
+				line-height: 19px;
+			}
+		}
+
+		&.mobile-button {
+			display: block;
+			text-align: center;
+
+			a.button {
+				width: 90%;
 			}
 		}
 	}
@@ -341,20 +348,8 @@
 @media (max-width: 320px) {
 
 	#banner {
+		height: 85%;
 		background-size: 150%;
 		
-		#banner-content {
-			top: 12%;
-			
-			h1 {
-				font-size: 30px;
-				line-height: 30px;
-			}
-			
-			.button {
-				font-size: $type-size-base;
-			}
-		}
 	}
-	
 }

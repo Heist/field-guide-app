@@ -165,10 +165,8 @@
 #blog-banner {
 	height: 60px;
 	background: $green;
-	position: relative;
-	top: 67px;
-	z-index: 1;
-	
+	margin: 67px 0 0 0;
+
 	.blog-banner-content {
 		text-align: center;
 		padding: 10px;
@@ -204,7 +202,7 @@
 #banner {
 	height: 100%;
 	background: $white url('../img/mountains.svg') top right no-repeat;
-	background-size: 100%;
+	background-size: 75%;
 	margin: 0;
 	padding: 0;
 	position: relative;
@@ -217,7 +215,7 @@
 	#banner-content {
 		width: 45%;
 		padding: 0;
-		margin: 10% 0 0 5%;
+		margin: 5% 0 0 5%;
 		float: left;
 		
 		h1 {

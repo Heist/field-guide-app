@@ -432,9 +432,7 @@ a.button {
 #blog-banner {
   height: 60px;
   background: #85AC0F;
-  position: relative;
-  top: 67px;
-  z-index: 1; }
+  margin: 67px 0 0 0; }
   #blog-banner .blog-banner-content {
     text-align: center;
     padding: 10px; }
@@ -463,7 +461,7 @@ a.button {
 #banner {
   height: 100%;
   background: #fff url('../img/mountains.svg') top right no-repeat;
-  background-size: 100%;
+  background-size: 75%;
   margin: 0;
   padding: 0;
   position: relative; }
@@ -473,7 +471,7 @@ a.button {
   #banner #banner-content {
     width: 45%;
     padding: 0;
-    margin: 10% 0 0 5%;
+    margin: 5% 0 0 5%;
     float: left; }
     #banner #banner-content h1 {
       width: 100%;
@@ -773,8 +771,6 @@ a.button {
     width: 40%; }
   #banner {
     height: 80%; }
-    #banner #banner-content {
-      margin: 15% 0 0 5%; }
     #banner .feature-banner-image {
       margin: 15% 0; }
   #footer-banner .front-layer .content {
@@ -792,7 +788,7 @@ a.button {
   #banner {
     height: 100%; }
     #banner #banner-content {
-      margin: 15% auto 0 auto;
+      margin: 5% auto 0 auto;
       width: 100%;
       text-align: center; }
       #banner #banner-content h1 {
@@ -805,7 +801,7 @@ a.button {
         margin: 20px auto 0 auto; }
     #banner .feature-banner-image {
       width: 100%;
-      margin: 60px auto 130px auto; }
+      margin: 30px auto; }
   #whatcanyoutest {
     padding-bottom: 60px; }
     #whatcanyoutest ul.points li {
@@ -841,23 +837,18 @@ a.button {
       line-height: 16px; } }
 
 @media (max-width: 675px) {
-  #blog-banner {
-    height: 60px;
-    background: #85AC0F;
-    position: relative;
-    top: 67px;
-    z-index: 1;
-    text-align: center; }
-    #blog-banner .blog-banner-content {
-      padding: 10px; }
-      #blog-banner .blog-banner-content img {
-        margin: 0 20px 0 0;
-        vertical-align: middle; }
-      #blog-banner .blog-banner-content p {
-        font-size: 16px;
-        display: inline; }
+  #blog-banner .blog-banner-content p {
+    font-size: 16px;
+    display: inline; }
   #banner #banner-content h1, #banner #banner-content h3 {
-    width: 100%; }
+    width: 90%; }
+  #banner #banner-content a.button {
+    display: none; }
+  #banner #banner-content .feature-banner-image {
+    margin: 30px auto; }
+  #banner .mobile-button {
+    display: block !important;
+    text-align: center; }
   #howitworks #feature-f1 .feature-copy, #howitworks #feature-f2 .feature-copy, #howitworks #feature-f3 .feature-copy {
     padding: 40px 40px 0 40px; }
   .feature-copy, #feature-f3 h2, #feature-f3 p {
@@ -870,7 +861,7 @@ a.button {
     padding: 0;
     margin: 0 auto 20px auto; }
   #whatcanyoutest {
-    padding: 0; }
+    padding: 130px 0; }
   #footerCTA {
     text-align: center; }
   .button.green {
@@ -887,28 +878,22 @@ a.button {
     display: none; } }
 
 @media (max-width: 605px) {
-  #blog-banner {
-    height: 60px;
-    background: #85AC0F;
-    position: relative;
-    top: 67px;
-    z-index: 1; }
-    #blog-banner .blog-banner-content {
-      padding: 10px 10px 10px 15px;
-      text-align: left;
+  #blog-banner .blog-banner-content {
+    padding: 10px 10px 10px 15px;
+    text-align: left;
+    float: left; }
+    #blog-banner .blog-banner-content img {
+      margin: 0 20px 0 0;
+      vertical-align: middle;
       float: left; }
-      #blog-banner .blog-banner-content img {
-        margin: 0 20px 0 0;
-        vertical-align: middle;
-        float: left; }
-      #blog-banner .blog-banner-content p {
-        margin: 0;
-        font-size: 18px;
-        line-height: 18px;
-        display: inline-block;
-        text-align: left;
-        width: 85%;
-        float: left; } }
+    #blog-banner .blog-banner-content p {
+      margin: 0;
+      font-size: 18px;
+      line-height: 18px;
+      display: inline-block;
+      text-align: left;
+      width: 85%;
+      float: left; } }
 
 @media (max-width: 400px) {
   #blog-banner {
@@ -917,19 +902,21 @@ a.button {
       font-size: 16px;
       line-height: 16px;
       width: 75%; }
-  #banner #banner-content {
-    top: 12%; }
+  #banner {
+    height: 85%; }
     #banner #banner-content h1 {
-      font-size: 40px;
-      line-height: 40px; } }
+      font-size: 30px;
+      line-height: 30px; }
+    #banner #banner-content h3 {
+      font-size: 18px;
+      line-height: 19px; }
+    #banner.mobile-button {
+      display: block;
+      text-align: center; }
+      #banner.mobile-button a.button {
+        width: 90%; } }
 
 @media (max-width: 320px) {
   #banner {
-    background-size: 150%; }
-    #banner #banner-content {
-      top: 12%; }
-      #banner #banner-content h1 {
-        font-size: 30px;
-        line-height: 30px; }
-      #banner #banner-content .button {
-        font-size: 16px; } }
+    height: 85%;
+    background-size: 150%; } }
