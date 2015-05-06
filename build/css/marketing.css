@@ -436,6 +436,7 @@ a.button {
   background: #85AC0F;
   margin: 67px 0 0 0; }
   #blog-banner .blog-banner-content {
+    width: 100%;
     text-align: center;
     padding: 10px; }
     #blog-banner .blog-banner-content img {
@@ -458,6 +459,19 @@ a.button {
         font-weight: 300; }
         #blog-banner .blog-banner-content p a:hover {
           text-decoration: underline; }
+    #blog-banner .blog-banner-content .close-button {
+      display: inline-block;
+      float: right;
+      color: #fff;
+      font-family: "canada-type-gibson",sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      margin: 3px 20px 0 0;
+      font-size: 25px;
+      border: 0;
+      outline: 0;
+      background: none;
+      cursor: pointer; }
 
 /* banner */
 #banner {
@@ -843,6 +857,22 @@ a.button {
       font-size: 15px; } }
 
 @media (max-width: 750px) {
+  #blog-banner .blog-banner-content {
+    padding: 10px 10px 10px 15px;
+    text-align: left;
+    float: left; }
+    #blog-banner .blog-banner-content img {
+      margin: 0 20px 0 0;
+      vertical-align: middle;
+      float: left; }
+    #blog-banner .blog-banner-content p {
+      margin: 0;
+      font-size: 17px;
+      line-height: 18px;
+      display: inline-block;
+      text-align: left;
+      width: 65%;
+      float: left; }
   #banner {
     height: 750px; }
   #footer-banner .front-layer .content .copy {
@@ -912,31 +942,16 @@ a.button {
   #footer-banner {
     display: none; } }
 
-@media (max-width: 605px) {
-  #blog-banner .blog-banner-content {
-    padding: 10px 10px 10px 15px;
-    text-align: left;
-    float: left; }
-    #blog-banner .blog-banner-content img {
-      margin: 0 20px 0 0;
-      vertical-align: middle;
-      float: left; }
-    #blog-banner .blog-banner-content p {
-      margin: 0;
-      font-size: 18px;
-      line-height: 18px;
-      display: inline-block;
-      text-align: left;
-      width: 85%;
-      float: left; } }
+@media (max-width: 470px) {
+  #blog-banner .blog-banner-content p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 15px;
+    width: 70%; }
+  #blog-banner .blog-banner-content .close-button {
+    margin: 3px 10px 0 0; } }
 
 @media (max-width: 400px) {
-  #blog-banner {
-    height: 65px; }
-    #blog-banner .blog-banner-content p {
-      font-size: 16px;
-      line-height: 16px;
-      width: 75%; }
   #banner {
     height: 530px; }
     #banner #banner-content h1 {

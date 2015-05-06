@@ -168,6 +168,7 @@
 	margin: 67px 0 0 0;
 
 	.blog-banner-content {
+		width: 100%;
 		text-align: center;
 		padding: 10px;
 
@@ -193,6 +194,19 @@
 					text-decoration: underline;
 				}
 			}
+		}
+
+		.close-button {
+			display: inline-block;
+			float: right;
+			color: $white;
+			@include type-regular;
+			margin: 3px 20px 0 0;
+			font-size: 25px;
+			border: 0;
+			outline: 0;
+			background: none;
+			cursor: pointer;
 		}
 	}
 }
