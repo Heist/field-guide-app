@@ -1018,3 +1018,7 @@ a.button {
       margin: 200px auto 0 auto; }
     #howitworks #feature-f1 .feature-copy .testwith, #howitworks #feature-f2 .feature-copy .testwith, #howitworks #feature-f3 .feature-copy .testwith {
       top: 180px; } }
+
+@media (max-width: 360px) {
+  #banner {
+    height: 450px; } }
