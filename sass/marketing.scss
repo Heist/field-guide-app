@@ -491,7 +491,15 @@
 	text-align: center;
 	font-size: 22px;
 	padding: 40px 0;
-	color: $gray-dark;
+
+	h4 {
+		text-transform: none;
+		font-size: 22px;
+		@include type-regular;
+		display: inline-block;
+		margin: 0 10px 0 0;
+		opacity: 1;
+	}
 }
 
 /* footer banner */

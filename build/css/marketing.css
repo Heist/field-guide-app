@@ -653,8 +653,16 @@ a.button {
 #footerCTA {
   text-align: center;
   font-size: 22px;
-  padding: 40px 0;
-  color: #585858; }
+  padding: 40px 0; }
+  #footerCTA h4 {
+    text-transform: none;
+    font-size: 22px;
+    font-family: "canada-type-gibson",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0 10px 0 0;
+    opacity: 1; }
 
 /* footer banner */
 #footer-banner {
@@ -864,6 +872,9 @@ a.button {
     padding: 130px 0; }
   #footerCTA {
     text-align: center; }
+    #footerCTA h4 {
+      display: block;
+      margin: 0 0 20px 0; }
   .button.green {
     width: 80%;
     display: block;
