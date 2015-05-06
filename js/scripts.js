@@ -9,20 +9,6 @@ $(document).ready(function() {
 		$('#header-burger').fadeToggle();
 	});	
 	
-	var waypoint = new Waypoint({
-		element: $('#howitworks'),
-		handler: function(direction) {
-			//console.log(direction);
-			if (direction == 'up') {
-				$('#header').fadeIn();
-				$('#header-light').fadeOut();
-			} else if (direction == 'down') {
-				$('#header').fadeOut();
-				$('#header-light').fadeIn();
-			}
-		}
-	});
-
 	var $scrollingDiv = $("#faq-nav ul");
 
 	$(window).scroll(function(){

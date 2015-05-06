@@ -471,7 +471,7 @@ a.button {
   #banner #banner-content {
     width: 45%;
     padding: 0;
-    margin: 5% 0 0 5%;
+    margin: 10% 0 0 5%;
     float: left; }
     #banner #banner-content h1 {
       width: 100%;
@@ -494,7 +494,7 @@ a.button {
       line-height: 21px; }
   #banner .feature-banner-image {
     width: 45%;
-    margin: 10% 0;
+    margin: 15% 0;
     float: left; }
     #banner .feature-banner-image img {
       width: 100%;
