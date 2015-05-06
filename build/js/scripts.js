@@ -3338,4 +3338,9 @@ $(document).ready(function() {
 	    }, 600);
 	});
 
+	$('.close-button').on('click', function(){
+		$('#blog-banner').css('display', 'none');
+		$('#banner').css('margin', '50px 0 0 0');
+	});
+
 });

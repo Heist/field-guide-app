@@ -476,7 +476,7 @@ a.button {
 /* banner */
 #banner {
   height: 500px;
-  background: #fff url('/build/img/mountains.svg') 455px -10px no-repeat;
+  background: #fff url('/build/img/mountains.svg') 455px 20px no-repeat;
   background-size: 70%;
   margin: 0;
   padding: 0; }
