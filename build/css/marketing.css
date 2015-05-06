@@ -211,6 +211,8 @@ a.button {
   font-weight: 400;
   cursor: pointer;
   border: 0; }
+  .button.large {
+    padding: 20px; }
   .button a {
     color: #fff; }
   .button.green {
@@ -460,12 +462,12 @@ a.button {
 /* banner */
 #banner {
   height: 500px;
-  background: #fff url('../img/mountains.svg') 455px -10px no-repeat;
+  background: #fff url('/build/img/mountains.svg') 455px -10px no-repeat;
   background-size: 70%;
   margin: 0;
   padding: 0; }
   #banner.thanks {
-    background: #f5795b url('../img/gfx/mountains.gif') no-repeat bottom center;
+    background: #f5795b url('/build/img/gfx/mountains.gif') no-repeat bottom center;
     background-size: cover; }
   #banner #banner-content {
     width: 45%;
@@ -482,6 +484,10 @@ a.button {
       font-family: "canada-type-gibson",sans-serif;
       font-style: normal;
       font-weight: 300; }
+      #banner #banner-content h1 span {
+        font-family: "canada-type-gibson",sans-serif;
+        font-style: normal;
+        font-weight: 400; }
     #banner #banner-content h3 {
       width: 90%;
       margin-bottom: 30px;
@@ -491,6 +497,10 @@ a.button {
       font-weight: 300;
       font-size: 20px;
       line-height: 21px; }
+      #banner #banner-content h3 span {
+        font-family: "canada-type-gibson",sans-serif;
+        font-style: normal;
+        font-weight: 400; }
   #banner .feature-banner-image {
     width: 50%;
     margin: 10% 0;
@@ -561,16 +571,16 @@ a.button {
         color: #777777;
         font-size: 18px; }
   #whatcanyoutest #icon-ethno {
-    background: url("../img/icons/ethno.svg") no-repeat left 4px;
+    background: url('/build/img/icons/ethno.svg') no-repeat left 4px;
     background-size: 24px 24px; }
   #whatcanyoutest #icon-prototypes {
-    background: url("../img/icons/prototypes.svg") no-repeat left 4px;
+    background: url('/build/img/icons/prototypes.svg') no-repeat left 4px;
     background-size: 24px 24px; }
   #whatcanyoutest #icon-usability {
-    background: url("../img/icons/usability.svg") no-repeat left 4px;
+    background: url('/build/img/icons/usability.svg') no-repeat left 4px;
     background-size: 24px 24px; }
   #whatcanyoutest #icon-competition {
-    background: url("../img/icons/competition.svg") no-repeat left 4px;
+    background: url('/build/img/icons/competition.svg') no-repeat left 4px;
     background-size: 24px 24px; }
 
 /* just general content */
@@ -592,7 +602,7 @@ a.button {
 
 /* how it works */
 #howitworks {
-  padding: 70px 0 50px 0;
+  padding: 70px 0 100px 0;
   margin: 0;
   background: #FAFAFA; }
   #howitworks p {
@@ -624,9 +634,6 @@ a.button {
     color: #613F24; }
   #howitworks #feature-f1 .feature-copy {
     padding-left: 100px; }
-  #howitworks #feature-f1 .testwith img {
-    width: 100%;
-    height: auto; }
   #howitworks #feature-f2 {
     padding-top: 50px; }
     #howitworks #feature-f2 .feature-copy {
@@ -636,9 +643,11 @@ a.button {
     #howitworks #feature-f3 .feature-copy a {
       margin: 0 0 40px 0;
       display: block; }
-  #howitworks #feature-f3 .testwith img {
-    width: 100%;
-    height: auto; }
+  #howitworks #feature-f3 .testwith {
+    margin: 10px 0 20px 0; }
+    #howitworks #feature-f3 .testwith img {
+      width: 100%;
+      height: auto; }
   #howitworks #feature-f3 .feature-image, #howitworks #feature-f2 .feature-image, #howitworks #feature-f1 .feature-image {
     width: 65%; }
     #howitworks #feature-f3 .feature-image img, #howitworks #feature-f2 .feature-image img, #howitworks #feature-f1 .feature-image img {
@@ -669,7 +678,7 @@ a.button {
   #footer-banner .back-layer {
     width: 100%;
     height: 240px;
-    background: #FAFAFA url('../img/footer-bg.svg') bottom center no-repeat;
+    background: #FAFAFA url('/build/img/footer-bg.svg') bottom center no-repeat;
     background-size: cover; }
   #footer-banner .front-layer {
     width: 100%;
@@ -770,7 +779,7 @@ a.button {
   #overview .col-full .feature-copy {
     padding-top: 20px; }
   #howitworks .col-full {
-    padding: 40px 0px !important; }
+    padding: 40px 0 0 0 !important; }
   #howitworks #feature-f1 .feature-image, #howitworks #feature-f2 .feature-image, #howitworks #feature-f3 .feature-image {
     width: 55%; }
   #howitworks #feature-f1 .feature-copy, #howitworks #feature-f2 .feature-copy, #howitworks #feature-f3 .feature-copy {
@@ -789,8 +798,8 @@ a.button {
 
 @media (max-width: 900px) {
   #banner {
-    height: 800px;
-    background: #fff url('../img/mountains.svg') -168px 163px no-repeat;
+    height: 850px;
+    background: #fff url('/build/img/mountains.svg') -45px 120px no-repeat;
     background-size: 131%; }
     #banner #banner-content {
       margin: 5% auto 0 auto;
@@ -800,16 +809,16 @@ a.button {
         margin: 0 auto 20px auto;
         width: 68%; }
       #banner #banner-content h3 {
-        margin: 0 auto 20px auto;
+        margin: 20px auto 30px auto;
         width: 100%; }
       #banner #banner-content a.button {
         margin: 20px auto 0 auto; }
     #banner .feature-banner-image {
       float: none;
-      width: 85%;
+      width: 90%;
       margin: 0 auto; }
       #banner .feature-banner-image img {
-        margin: 40px auto; }
+        margin: 20px auto; }
   #whatcanyoutest ul.points li {
     width: 100%;
     float: none;
@@ -859,6 +868,23 @@ a.button {
     text-align: center; }
   #howitworks #feature-f1 .feature-copy, #howitworks #feature-f2 .feature-copy, #howitworks #feature-f3 .feature-copy {
     padding: 40px 40px 0 40px; }
+  #howitworks #feature-f1, #howitworks #feature-f2, #howitworks #feature-f3 {
+    position: relative; }
+    #howitworks #feature-f1 .feature-image img, #howitworks #feature-f2 .feature-image img, #howitworks #feature-f3 .feature-image img {
+      margin: 175px auto 0 auto; }
+    #howitworks #feature-f1 .feature-copy h3, #howitworks #feature-f2 .feature-copy h3, #howitworks #feature-f3 .feature-copy h3 {
+      position: absolute;
+      top: 75px;
+      left: 10%;
+      width: 80%; }
+    #howitworks #feature-f1 .feature-copy .testwith, #howitworks #feature-f2 .feature-copy .testwith, #howitworks #feature-f3 .feature-copy .testwith {
+      position: absolute;
+      top: 170px;
+      left: 5px; }
+      #howitworks #feature-f1 .feature-copy .testwith img, #howitworks #feature-f2 .feature-copy .testwith img, #howitworks #feature-f3 .feature-copy .testwith img {
+        width: 75%; }
+  #howitworks #feature-f3 .feature-image img {
+    margin: 275px auto 0 auto; }
   .feature-copy, #feature-f3 h2, #feature-f3 p {
     width: 100% !important;
     text-align: center; }
@@ -868,8 +894,6 @@ a.button {
     display: block;
     padding: 0;
     margin: 0 auto 20px auto; }
-  #whatcanyoutest {
-    padding: 130px 0; }
   #footerCTA {
     text-align: center; }
     #footerCTA h4 {
@@ -914,19 +938,23 @@ a.button {
       line-height: 16px;
       width: 75%; }
   #banner {
-    height: 85%; }
+    height: 530px; }
     #banner #banner-content h1 {
       font-size: 30px;
       line-height: 30px; }
     #banner #banner-content h3 {
       font-size: 18px;
       line-height: 19px; }
-    #banner.mobile-button {
-      display: block;
-      text-align: center; }
-      #banner.mobile-button a.button {
-        width: 90%; } }
+    #banner.mobile-buttona.button.large {
+      padding: 10px !important;
+      width: 90% !important; } }
 
 @media (max-width: 320px) {
   #banner {
-    background-size: 150%; } }
+    background-size: 150%; }
+  #howitworks #feature-f1, #howitworks #feature-f2, #howitworks #feature-f3 {
+    position: relative; }
+    #howitworks #feature-f1 .feature-image img, #howitworks #feature-f2 .feature-image img, #howitworks #feature-f3 .feature-image img {
+      margin: 200px auto 0 auto; }
+    #howitworks #feature-f1 .feature-copy .testwith, #howitworks #feature-f2 .feature-copy .testwith, #howitworks #feature-f3 .feature-copy .testwith {
+      top: 180px; } }

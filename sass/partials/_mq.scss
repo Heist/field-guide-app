@@ -13,7 +13,7 @@
 	
 	#howitworks {
 		.col-full {
-			padding: 40px 0px !important;
+			padding: 40px 0 0 0 !important;
 		}
 
 		#feature-f1, #feature-f2, #feature-f3 {
@@ -59,8 +59,8 @@
 @media (max-width: 900px) {
 
 	#banner {
-		height: 800px;
-		background: $white url('../img/mountains.svg') -168px 163px no-repeat;
+		height: 850px;
+		background: $white url('/build/img/mountains.svg') -45px 120px no-repeat;
 		background-size: 131%;
 
 		#banner-content {
@@ -74,7 +74,7 @@
 			}
 
 			h3 {
-				margin: 0 auto 20px auto;
+				margin: 20px auto 30px auto;
 				width: 100%;
 			}
 
@@ -85,11 +85,11 @@
 
 		.feature-banner-image {
 			float: none;
-			width: 85%;
+			width: 90%;
 			margin: 0 auto;
 
 			img {
-				margin: 40px auto;
+				margin: 20px auto;
 			}
 		}
 	}
@@ -196,6 +196,7 @@
 	}
 
 	#banner {
+
 		#banner-content {
 
 			h1, h3 {
@@ -225,6 +226,40 @@
 				padding: 40px 40px 0 40px;
 			}
 		}
+
+		#feature-f1, #feature-f2, #feature-f3 {
+			position: relative;
+			.feature-image {
+				img {
+					margin: 175px auto 0 auto;
+				}
+			}
+			.feature-copy {
+				h3 {
+					position: absolute;
+					top: 75px;
+					left: 10%;
+					width: 80%;
+				}
+
+				.testwith {
+					position: absolute;
+					top: 170px;
+					left: 5px;
+					img {
+						width: 75%;
+					}
+				}
+			}
+		}
+
+		#feature-f3 {
+			.feature-image {
+				img {
+					margin: 275px auto 0 auto;
+				}
+			}
+		}
 	}
 	
 	.feature-copy, #feature-f3 h2, #feature-f3 p {
@@ -238,10 +273,6 @@
 		display: block;
 		padding: 0;
 		margin: 0 auto 20px auto;
-	}
-
-	#whatcanyoutest {
-		padding: 130px 0;
 	}
 	
 	#footerCTA {
@@ -322,7 +353,8 @@
 	}
 
 	#banner {
-		height: 85%;
+		height: 530px;
+
 
 		#banner-content {
 
@@ -338,11 +370,10 @@
 		}
 
 		&.mobile-button {
-			display: block;
-			text-align: center;
 
-			a.button {
-				width: 90%;
+			&a.button.large {
+				padding: 10px !important;
+				width: 90% !important;
 			}
 		}
 	}
@@ -355,5 +386,23 @@
 	#banner {
 		background-size: 150%;
 		
+	}
+
+	#howitworks {
+
+		#feature-f1, #feature-f2, #feature-f3 {
+			position: relative;
+			.feature-image {
+				img {
+					margin: 200px auto 0 auto;
+				}
+			}
+			.feature-copy {
+
+				.testwith {
+					top: 180px;
+				}
+			}
+		}
 	}
 }

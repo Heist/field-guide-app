@@ -130,6 +130,10 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {border:0;padding:0;
 	cursor: pointer;
 	border: 0;
 
+	&.large {
+		padding: 20px;
+	}
+
 	a {
 		color: $white;
 	}

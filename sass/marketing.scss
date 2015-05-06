@@ -201,13 +201,13 @@
 
 #banner {
 	height: 500px;
-	background: $white url('../img/mountains.svg') 455px -10px no-repeat;
+	background: $white url('/build/img/mountains.svg') 455px -10px no-repeat;
 	background-size: 70%;
 	margin: 0;
 	padding: 0;
 	
 	&.thanks {
-		background: $orange url('../img/gfx/mountains.gif') no-repeat bottom center;
+		background: $orange url('/build/img/gfx/mountains.gif') no-repeat bottom center;
 		background-size: cover;
 	}
 	
@@ -225,6 +225,10 @@
 			letter-spacing: -1px;
 			color: $slate;
 			@include type-light;
+
+			span {
+				@include type-regular;
+			}
 		}
 		
 		h3 {
@@ -234,6 +238,10 @@
 			@include type-light;
 			font-size: 20px;
 			line-height: 21px;
+
+			span {
+				@include type-regular;
+			}
 		}
 	}
 	
@@ -341,7 +349,7 @@
 			
 	@each $type in $types {
 	#icon-#{$type} {
-			background: url("../img/icons/#{$type}.svg") no-repeat left 4px;
+			background: url('/build/img/icons/#{$type}.svg') no-repeat left 4px;
 			background-size: 24px 24px;
 		}
 	}
@@ -380,7 +388,7 @@
 /* how it works */
 
 #howitworks {
-	padding: 70px 0 50px 0;
+	padding: 70px 0 100px 0;
 	margin: 0;
 	background: $fg-bg;
 
@@ -427,13 +435,6 @@
 		.feature-copy {
 			padding-left: 100px;
 		}
-	
-		.testwith {
-			img {
-				width: 100%;
-				height: auto;
-			}
-		}
 	}
 
 	#feature-f2 {
@@ -456,6 +457,8 @@
 		}
 
 		.testwith {
+			margin: 10px 0 20px 0;
+
 			img {
 				width: 100%;
 				height: auto;
@@ -509,7 +512,7 @@
 	.back-layer {
 		width: 100%;
 		height: 240px;
-		background: $fg-bg url('../img/footer-bg.svg') bottom center no-repeat;
+		background: $fg-bg url('/build/img/footer-bg.svg') bottom center no-repeat;
 		background-size: cover;
 	}
 
