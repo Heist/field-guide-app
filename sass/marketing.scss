@@ -200,12 +200,11 @@
 /* banner */
 
 #banner {
-	height: 100%;
-	background: $white url('../img/mountains.svg') top right no-repeat;
-	background-size: 75%;
+	height: 500px;
+	background: $white url('../img/mountains.svg') 455px -10px no-repeat;
+	background-size: 70%;
 	margin: 0;
 	padding: 0;
-	position: relative;
 	
 	&.thanks {
 		background: $orange url('../img/gfx/mountains.gif') no-repeat bottom center;
@@ -239,8 +238,8 @@
 	}
 	
 	.feature-banner-image {
-		width: 45%;
-		margin: 15% 0;
+		width: 50%;
+		margin: 10% 0;
 		float: left;
 		
 		img {
@@ -509,7 +508,7 @@
 
 	.back-layer {
 		width: 100%;
-		height: 213px;
+		height: 240px;
 		background: $fg-bg url('../img/footer-bg.svg') bottom center no-repeat;
 		background-size: cover;
 	}
@@ -524,13 +523,13 @@
 			width: 100%;
 			
 			img {
-				margin: -11px 0 0 0;
+				margin: 16px 0 0 0;
 				float: left;
 			}
 			
 			.copy {
 				width: 75%;
-				margin: 60px 0 0 40px;
+				margin: 80px 0 0 40px;
 				float: left;
 
 				h3 {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="990px" height="501px" viewBox="0 0 990 501" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.3.1 (12005) - http://www.bohemiancoding.com/sketch -->
-    <title>Triangle 3 + Rectangle 11 + Triangle 3 + Rectangle 11 Copy 2 + Triangle 3 + Rectangle 11 Copy + Rectangle 496</title>
+<svg width="1052px" height="481px" viewBox="0 0 1052 481" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+    <title>Triangle 3 + Rectangle 11 + Triangle 3 + Rectangle 11 Copy 2 + Triangle 3 + Rectangle 11 Copy + Rectangle 787</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <polygon id="path-1" points="203.196094 -4.51473441 406.392187 401.811362 0 401.811362 "></polygon>
@@ -11,9 +11,9 @@
         <polygon id="path-9" points="237.65625 -5.265764 475.3125 468.652996 0 468.652996 "></polygon>
     </defs>
     <g id="Homepage-0.8" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Desktop-III-Copy-11" sketch:type="MSArtboardGroup" transform="translate(-450.000000, -151.000000)">
-            <g id="Triangle-3-+-Rectangle-11-+-Triangle-3-+-Rectangle-11-Copy-2-+-Triangle-3-+-Rectangle-11-Copy-+-Rectangle-496" sketch:type="MSLayerGroup" transform="translate(450.000000, 154.000000)">
-                <g id="Triangle-3-+-Rectangle-11-+-Triangle-3-+-Rectangle-11-Copy-2-+-Triangle-3-+-Rectangle-11-Copy" transform="translate(92.000000, 0.000000)">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup">
+            <g id="Triangle-3-+-Rectangle-11-+-Triangle-3-+-Rectangle-11-Copy-2-+-Triangle-3-+-Rectangle-11-Copy-+-Rectangle-787" sketch:type="MSLayerGroup" transform="translate(-3.000000, 0.000000)">
+                <g id="Triangle-3-+-Rectangle-11-+-Triangle-3-+-Rectangle-11-Copy-2-+-Triangle-3-+-Rectangle-11-Copy" transform="translate(3.000000, 0.000000)">
                     <g id="Triangle-3-+-Rectangle-11" transform="translate(211.372225, 68.386094)">
                         <polygon id="Triangle-3" stroke="#F3F3F3" stroke-width="3.0251212" sketch:type="MSShapeGroup" points="203.196094 0 406.392187 406.326097 0 406.326097 "></polygon>
                         <g id="Rectangle-10" transform="translate(0.000000, 4.514734)">
@@ -65,7 +65,7 @@
                         </g>
                     </g>
                 </g>
-                <rect id="Rectangle-496" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="453" width="1042" height="45"></rect>
+                <rect id="Rectangle-787" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="472" width="1057" height="11"></rect>
             </g>
         </g>
     </g>

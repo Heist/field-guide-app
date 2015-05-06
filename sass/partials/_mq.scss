@@ -28,15 +28,6 @@
 		}
 	}
 
-	#banner {
-		height: 80%;
-
-		.feature-banner-image {
-			margin: 15% 0;
-		}
-	}
-
-
 	#footer-banner {
 
 		.front-layer {
@@ -68,7 +59,9 @@
 @media (max-width: 900px) {
 
 	#banner {
-		height: 100%;
+		height: 800px;
+		background: $white url('../img/mountains.svg') -168px 163px no-repeat;
+		background-size: 131%;
 
 		#banner-content {
 			margin: 5% auto 0 auto;
@@ -91,13 +84,17 @@
 		}
 
 		.feature-banner-image {
-			width: 100%;
-			margin: 30px auto;
+			float: none;
+			width: 85%;
+			margin: 0 auto;
+
+			img {
+				margin: 40px auto;
+			}
 		}
 	}
 
 	#whatcanyoutest {
-		padding-bottom: 60px;
 		
 		ul.points {
 			li {
@@ -162,6 +159,9 @@
 }
 
 @media (max-width: 750px) {
+	#banner {
+		height: 750px;
+	}
 
 	#footer-banner {
 		.front-layer {
@@ -353,7 +353,6 @@
 @media (max-width: 320px) {
 
 	#banner {
-		height: 85%;
 		background-size: 150%;
 		
 	}
