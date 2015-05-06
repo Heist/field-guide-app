@@ -816,7 +816,7 @@ a.button {
     background: #fff url('/build/img/mountains.svg') -45px 120px no-repeat;
     background-size: 131%; }
     #banner #banner-content {
-      margin: 5% auto 0 auto;
+      margin: 10% auto 0 auto;
       width: 100%;
       text-align: center; }
       #banner #banner-content h1 {
@@ -866,7 +866,7 @@ a.button {
       vertical-align: middle;
       float: left; }
     #blog-banner .blog-banner-content p {
-      margin: 0;
+      margin: 2px 0;
       font-size: 17px;
       line-height: 18px;
       display: inline-block;
@@ -896,6 +896,8 @@ a.button {
   #banner .mobile-button {
     display: block !important;
     text-align: center; }
+    #banner .mobile-button a.button {
+      width: 90%; }
   #howitworks #feature-f1 .feature-copy, #howitworks #feature-f2 .feature-copy, #howitworks #feature-f3 .feature-copy {
     padding: 40px 40px 0 40px; }
   #howitworks #feature-f1, #howitworks #feature-f2, #howitworks #feature-f3 {
@@ -947,24 +949,24 @@ a.button {
     margin: 5px 0;
     font-size: 14px;
     line-height: 15px;
-    width: 70%; }
+    width: 71%; }
   #blog-banner .blog-banner-content .close-button {
-    margin: 3px 10px 0 0; } }
+    margin: 3px 10px 0 0; }
+  #banner {
+    height: 650px; } }
 
 @media (max-width: 400px) {
-  #banner {
-    height: 530px; }
-    #banner #banner-content h1 {
-      font-size: 30px;
-      line-height: 30px; }
-    #banner #banner-content h3 {
-      font-size: 18px;
-      line-height: 19px; }
-    #banner.mobile-buttona.button.large {
-      padding: 10px !important;
-      width: 90% !important; } }
+  #banner.mobile-buttona.button.large {
+    padding: 10px !important;
+    width: 90% !important; } }
 
-@media (max-width: 320px) {
+@media (max-width: 384px) {
+  #blog-banner .blog-banner-content img {
+    margin: 0 10px 0 0; }
+  #blog-banner .blog-banner-content p {
+    margin: -2px 0; }
+  #blog-banner .blog-banner-content .close-button {
+    margin: 3px 0 0 0; }
   #banner {
     background-size: 150%; }
   #howitworks #feature-f1, #howitworks #feature-f2, #howitworks #feature-f3 {

@@ -64,7 +64,7 @@
 		background-size: 131%;
 
 		#banner-content {
-			margin: 5% auto 0 auto;
+			margin: 10% auto 0 auto;
 			width: 100%;
 			text-align: center;
 
@@ -173,7 +173,7 @@
 			}
 
 			p {
-				margin: 0;
+				margin: 2px 0;
 				font-size: 17px;
 				line-height: 18px;
 				display: inline-block;
@@ -240,6 +240,10 @@
 		.mobile-button {
 			display: block !important;
 			text-align: center;
+
+			a.button {
+				width: 90%;
+			}
 		}
 	}
 	
@@ -342,7 +346,7 @@
 				margin: 5px 0;
 				font-size: 14px;
 				line-height: 15px;
-				width: 70%;
+				width: 71%;
 			}
 
 			.close-button {
@@ -350,27 +354,16 @@
 			}
 		}
 	}
+
+	#banner {
+		height: 650px;
+	}
 }
 
 
 @media (max-width: 400px) {
 
 	#banner {
-		height: 530px;
-
-
-		#banner-content {
-
-			h1 {
-				font-size: 30px;
-				line-height: 30px;
-			}
-
-			h3 {
-				font-size: 18px;
-				line-height: 19px;
-			}
-		}
 
 		&.mobile-button {
 
@@ -383,8 +376,22 @@
 	
 }
 
+@media (max-width: 384px) {
 
-@media (max-width: 320px) {
+	#blog-banner {
+		.blog-banner-content {
+			img {
+				margin: 0 10px 0 0;
+			}
+			p {
+				margin: -2px 0;
+			}
+
+			.close-button {
+				margin: 3px 0 0 0;
+			}
+		}
+	}
 
 	#banner {
 		background-size: 150%;
