@@ -3339,8 +3339,7 @@ $(document).ready(function() {
 	});
 
 	$('.close-button').on('click', function(){
-		$('#blog-banner').css('display', 'none');
-		$('#banner').css('margin', '50px 0 0 0');
+		$('#blog-banner').addClass('animated fadeOutUp');
 	});
 
 });

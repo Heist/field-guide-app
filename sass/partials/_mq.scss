@@ -60,7 +60,7 @@
 
 	#banner {
 		height: 850px;
-		background: $white url('/build/img/mountains.svg') -45px 120px no-repeat;
+		background: $white url('../img/mountains.svg') -45px 120px no-repeat;
 		background-size: 131%;
 
 		#banner-content {
@@ -89,7 +89,7 @@
 			margin: 0 auto;
 
 			img {
-				margin: 20px auto;
+				margin: 40px auto;
 			}
 		}
 	}
@@ -167,18 +167,18 @@
 			float: left;
 
 			img {
-				margin: 0 20px 0 0;
+				margin: 0 15px 0 0;
 				vertical-align: middle;
 				float: left;
 			}
 
 			p {
 				margin: 2px 0;
-				font-size: 17px;
-				line-height: 18px;
+				font-size: 18px;
+				line-height: 19px;
 				display: inline-block;
 				text-align: left;
-				width: 65%;
+				width: 80%;
 				float: left;
 			}
 		}
@@ -223,6 +223,7 @@
 	#banner {
 
 		#banner-content {
+			margin: 7% auto 0 auto;
 
 			h1, h3 {
 				width: 90%;
@@ -350,7 +351,7 @@
 			}
 
 			.close-button {
-				margin: 3px 10px 0 0;
+				right: 20px;
 			}
 		}
 	}
@@ -361,10 +362,16 @@
 }
 
 
+@media (max-width: 420px) {
+	#banner {
+		height: 700px;
+	}
+}
+
 @media (max-width: 400px) {
 
 	#banner {
-		height: 500px;
+		height: 600px;
 
 		#banner-content {
 			h1 {
@@ -470,10 +477,6 @@
 			}
 			p {
 				margin: -2px 0;
-			}
-
-			.close-button {
-				margin: 3px 0 0 0;
 			}
 		}
 	}
