@@ -2989,9 +2989,8 @@ a.button {
         text-decoration: none;
         font-family: "canada-type-gibson",sans-serif;
         font-style: normal;
-        font-weight: 300; }
-        #blog-banner .blog-banner-content p a:hover {
-          text-decoration: underline; }
+        font-weight: 300;
+        text-decoration: underline; }
     #blog-banner .blog-banner-content .close-button {
       float: right;
       color: #fff;
@@ -3491,7 +3490,12 @@ a.button {
   #blog-banner .blog-banner-content .close-button {
     right: 20px; }
   #banner {
-    height: 650px; } }
+    height: 650px; }
+  /* faq stuff */
+  #faq-nav {
+    display: none; }
+  #faq-content {
+    width: 100%; } }
 
 @media (max-width: 420px) {
   #banner {
