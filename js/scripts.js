@@ -14,7 +14,6 @@ $(document).ready(function() {
 	$(window).scroll(function(){
 		$scrollingAmount = $(window).scrollTop() - 180;
 		
-		console.log($scrollingAmount);
 		if ($scrollingAmount < 0) {
 			$scrollingAmount = 0;
 		}
@@ -30,5 +29,7 @@ $(document).ready(function() {
 	$('.close-button').on('click', function(){
 		$('#blog-banner').addClass('animated fadeOutUp');
 	});
+	
+	$('a').smoothScroll({offset: -100});
 
 });
