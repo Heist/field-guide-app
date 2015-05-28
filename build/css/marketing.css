@@ -3181,28 +3181,28 @@ a.button {
     padding: 50px 0; }
   #howitworks h2 {
     color: #613F24; }
-  #howitworks #feature-f1 .feature-copy {
+  #howitworks .feature-copy-left .feature-copy {
     padding-left: 100px; }
-  #howitworks #feature-f2 {
-    padding-top: 50px; }
-    #howitworks #feature-f2 .feature-copy {
-      padding-right: 100px; }
-  #howitworks #feature-f3 .feature-copy {
+  #howitworks .feature-copy-left.screen-cast.feature-copy {
     padding-left: 100px; }
-    #howitworks #feature-f3 .feature-copy a {
+    #howitworks .feature-copy-left.screen-cast.feature-copy a {
       margin: 0 0 40px 0;
       display: block; }
-  #howitworks #feature-f3 .testwith {
+  #howitworks .feature-copy-left.screen-cast.testwith {
     margin: 10px 0 20px 0; }
-    #howitworks #feature-f3 .testwith img {
+    #howitworks .feature-copy-left.screen-cast.testwith img {
       width: 100%;
       height: auto; }
-  #howitworks #feature-f3 .feature-image, #howitworks #feature-f2 .feature-image, #howitworks #feature-f1 .feature-image {
+  #howitworks .feature-copy-right {
+    padding-top: 50px; }
+    #howitworks .feature-copy-right .feature-copy {
+      padding-right: 100px; }
+  #howitworks .feature-copy-left .feature-image, #howitworks .feature-copy-right .feature-image {
     width: 65%; }
-    #howitworks #feature-f3 .feature-image img, #howitworks #feature-f2 .feature-image img, #howitworks #feature-f1 .feature-image img {
+    #howitworks .feature-copy-left .feature-image img, #howitworks .feature-copy-right .feature-image img {
       width: 100%;
       height: auto; }
-  #howitworks #feature-f3 .feature-copy, #howitworks #feature-f2 .feature-copy, #howitworks #feature-f1 .feature-copy {
+  #howitworks .feature-copy-left .feature-copy, #howitworks .feature-copy-right .feature-copy {
     padding-top: 12%;
     width: 30%; }
 
@@ -3329,9 +3329,9 @@ a.button {
     padding-top: 20px; }
   #howitworks .col-full {
     padding: 40px 0 0 0 !important; }
-  #howitworks #feature-f1 .feature-image, #howitworks #feature-f2 .feature-image, #howitworks #feature-f3 .feature-image {
+  #howitworks .feature-copy-left .feature-image, #howitworks .feature-copy-right .feature-image {
     width: 55%; }
-  #howitworks #feature-f1 .feature-copy, #howitworks #feature-f2 .feature-copy, #howitworks #feature-f3 .feature-copy {
+  #howitworks .feature-copy-left .feature-copy, #howitworks .feature-copy-right .feature-copy {
     padding-top: 0px;
     width: 40%; }
   #footer-banner .front-layer .content {
@@ -3373,9 +3373,9 @@ a.button {
     float: none;
     padding: 0 0 20px 50px;
     margin: 0; }
-  #feature-f1 .feature-image, #feature-f2 .feature-image, #feature-f3 .feature-image {
+  .feature-copy-left .feature-image, .feature-copy-right .feature-image {
     width: 50%; }
-  #feature-f1 .feature-copy, #feature-f2 .feature-copy, #feature-f3 .feature-copy {
+  .feature-copy-left .feature-copy, .feature-copy-right .feature-copy {
     padding-top: 20px;
     width: 50%; }
   #footer-banner .front-layer .content {
@@ -3435,24 +3435,24 @@ a.button {
     text-align: center; }
     #banner .mobile-button a.button {
       width: 90%; }
-  #howitworks #feature-f1 .feature-copy, #howitworks #feature-f2 .feature-copy, #howitworks #feature-f3 .feature-copy {
+  #howitworks .feature-copy-left .feature-copy, #howitworks .feature-copy-right .feature-copy {
     padding: 40px 40px 0 40px; }
-  #howitworks #feature-f1, #howitworks #feature-f2, #howitworks #feature-f3 {
+  #howitworks .feature-copy-left, #howitworks .feature-copy-right {
     position: relative; }
-    #howitworks #feature-f1 .feature-image img, #howitworks #feature-f2 .feature-image img, #howitworks #feature-f3 .feature-image img {
+    #howitworks .feature-copy-left .feature-image img, #howitworks .feature-copy-right .feature-image img {
       margin: 175px auto 0 auto; }
-    #howitworks #feature-f1 .feature-copy h3, #howitworks #feature-f2 .feature-copy h3, #howitworks #feature-f3 .feature-copy h3 {
+    #howitworks .feature-copy-left .feature-copy h3, #howitworks .feature-copy-right .feature-copy h3 {
       position: absolute;
       top: 75px;
       left: 10%;
       width: 80%; }
-    #howitworks #feature-f1 .feature-copy .testwith, #howitworks #feature-f2 .feature-copy .testwith, #howitworks #feature-f3 .feature-copy .testwith {
+    #howitworks .feature-copy-left .feature-copy .testwith, #howitworks .feature-copy-right .feature-copy .testwith {
       position: absolute;
       top: 170px;
       left: 5px; }
-      #howitworks #feature-f1 .feature-copy .testwith img, #howitworks #feature-f2 .feature-copy .testwith img, #howitworks #feature-f3 .feature-copy .testwith img {
+      #howitworks .feature-copy-left .feature-copy .testwith img, #howitworks .feature-copy-right .feature-copy .testwith img {
         width: 75%; }
-  #howitworks #feature-f3 .feature-image img {
+  #howitworks .screen-cast .feature-image img {
     margin: 275px auto 0 auto; }
   .feature-copy, #feature-f3 h2, #feature-f3 p {
     width: 100% !important;
@@ -3531,22 +3531,22 @@ a.button {
     #howitworks .howitworks-title h2 {
       font-size: 24px;
       line-height: 27px; }
-    #howitworks #feature-f1, #howitworks #feature-f2, #howitworks #feature-f3 {
+    #howitworks .feature-copy-left, #howitworks .feature-copy-right {
       position: relative; }
-      #howitworks #feature-f1 .feature-image img, #howitworks #feature-f2 .feature-image img, #howitworks #feature-f3 .feature-image img {
+      #howitworks .feature-copy-left .feature-image img, #howitworks .feature-copy-right .feature-image img {
         margin: 100px auto 0 auto; }
-      #howitworks #feature-f1 .feature-copy, #howitworks #feature-f2 .feature-copy, #howitworks #feature-f3 .feature-copy {
+      #howitworks .feature-copy-left .feature-copy, #howitworks .feature-copy-right .feature-copy {
         padding: 0 40px; }
-        #howitworks #feature-f1 .feature-copy h3, #howitworks #feature-f2 .feature-copy h3, #howitworks #feature-f3 .feature-copy h3 {
+        #howitworks .feature-copy-left .feature-copy h3, #howitworks .feature-copy-right .feature-copy h3 {
           top: 50px;
           font-size: 20px;
           line-height: 22px; }
-        #howitworks #feature-f1 .feature-copy p, #howitworks #feature-f2 .feature-copy p, #howitworks #feature-f3 .feature-copy p {
+        #howitworks .feature-copy-left .feature-copy p, #howitworks .feature-copy-right .feature-copy p {
           font-size: 14px;
           line-height: 16px; }
-        #howitworks #feature-f1 .feature-copy .testwith, #howitworks #feature-f2 .feature-copy .testwith, #howitworks #feature-f3 .feature-copy .testwith {
+        #howitworks .feature-copy-left .feature-copy .testwith, #howitworks .feature-copy-right .feature-copy .testwith {
           top: 130px; }
-    #howitworks #feature-f3 .feature-image img {
+    #howitworks .screen-cast .feature-image img {
       margin: 175px auto 0 auto; } }
 
 @media (max-width: 384px) {
@@ -3556,11 +3556,11 @@ a.button {
     margin: -2px 0; }
   #banner {
     background-size: 150%; }
-  #howitworks #feature-f1, #howitworks #feature-f2, #howitworks #feature-f3 {
+  #howitworks .feature-copy-left, #howitworks .feature-copy-right {
     position: relative; }
-    #howitworks #feature-f1 .feature-image img, #howitworks #feature-f2 .feature-image img, #howitworks #feature-f3 .feature-image img {
+    #howitworks .feature-copy-left .feature-image img, #howitworks .feature-copy-right .feature-image img {
       margin: 200px auto 0 auto; }
-    #howitworks #feature-f1 .feature-copy .testwith, #howitworks #feature-f2 .feature-copy .testwith, #howitworks #feature-f3 .feature-copy .testwith {
+    #howitworks .feature-copy-left .feature-copy .testwith, #howitworks .feature-copy-right .feature-copy .testwith {
       top: 180px; } }
 
 @media (max-width: 360px) {
