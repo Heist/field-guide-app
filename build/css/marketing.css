@@ -3010,10 +3010,11 @@ a.button {
 
 /* banner */
 #banner {
+  max-width: 1280px;
+  margin: 0 auto;
   height: 500px;
   background: #fff url('../img/mountains.svg') 455px 20px no-repeat;
   background-size: 70%;
-  margin: 0;
   padding: 0; }
   #banner.thanks {
     background: #f5795b url('../img/gfx/mountains.gif') no-repeat bottom center;
@@ -3077,8 +3078,9 @@ a.button {
 
 /* what can you test */
 #whatcanyoutest {
-  padding: 0 0 30px 0;
-  margin: 0; }
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 0 30px 0; }
   #whatcanyoutest img {
     display: block;
     margin: 0px auto;
@@ -3153,8 +3155,10 @@ a.button {
 /* how it works */
 #howitworks {
   padding: 70px 0 100px 0;
-  margin: 0;
-  background: #FAFAFA; }
+  max-width: 1280px;
+  margin: 0 auto;
+  background: #FAFAFA;
+  border-radius: 4px; }
   #howitworks p {
     color: #949799;
     font-size: 20px;
@@ -3224,11 +3228,12 @@ a.button {
 
 /* footer banner */
 #footer-banner {
-  position: relative; }
+  position: relative;
+  margin: 20px 0 0 0; }
   #footer-banner .back-layer {
     width: 100%;
     height: 240px;
-    background: #FAFAFA url('../img/footer-bg.svg') bottom center no-repeat;
+    background: url('../img/footer-bg.svg') bottom center no-repeat;
     background-size: cover; }
   #footer-banner .front-layer {
     width: 100%;
