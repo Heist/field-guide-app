@@ -5,21 +5,6 @@ $(window).load(function(){
 
 $(document).ready(function() {
 
-	var waypoint = new Waypoint({
-
-		element: $('#whatcanyoutest'),
-		handler: function(direction) {
-			//console.log(direction);
-			if (direction == 'up') {
-				$('#header').fadeIn();
-				$('#header-light').fadeOut();
-			} else if (direction == 'down') {
-				$('#header').fadeOut();
-				$('#header-light').fadeIn();
-			}
-		}
-	});
-
 	$('.mobile-nav').click(function() {
 		$('#header-burger').fadeToggle();
 	});	
